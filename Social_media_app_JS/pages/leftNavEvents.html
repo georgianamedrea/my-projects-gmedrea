@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events | Left Navigation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/leftNavEvents.css">
+</head>
+<body>
+    <a href="feed.html"><img src="../assests/back.png" class="backImage" alt="back icon"></a>
+    
+    <h3>Discover events nearby </h3>
+    <section class="mainContent">
+        <ul>
+            <li id="suggestedEvent">
+                <a href="#"><img
+                        src="../assests/nature 3.jpeg"
+                        alt="userProfile" width="420">
+                </a>
+                <span class="eventName"><strong>Yoga in aer liber</strong></span>
+                <span class="friendsInterested">Username 1 is interested</span>
+                <button id="interestedBtn">Interested</button>
+            </li>
+        </ul>
+    </section>
+
+    <h3>Events you are interested in </h3>
+    <section class="mainContent">
+        <ul id="eventList">
+            <li class="myEvent">
+                <a href="#"><img
+                        src="../assests/nature 8.jpeg"
+                        alt="userProfile" width="420">
+                </a>
+                <span class="myEventName"><strong>Drumetii cu Pitorescu</strong></span>
+                <span class="peopleInterested">17 interested · 30 going</span>
+                <button class="interested">Interested</button>
+            </li>
+            <li class="myEvent">
+                <a href="#"><img
+                        src="../assests/nature 9.jpeg"
+                        alt="userProfile" width="420">
+                </a>
+                <span class="myEventName"><strong>Flori de primavara</strong></span>
+                <span class="peopleInterested">1 interested · 4 going</span>
+                <button class="interested">Interested</button>
+            </li>
+        </ul>
+    </section>
+
+
+    <script src="../js/leftNavEvents.js"></script>
+</body>
+</html>

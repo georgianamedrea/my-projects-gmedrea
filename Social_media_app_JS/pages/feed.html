@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Media App | Feed</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/feed.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="mainSearch">
+            <a href="#"><i class="bi bi-facebook logo"></i></a>
+            <input type="search" class="searchInput" placeholder="Search on social media">
+        </div>
+
+        <nav class="mainNavigation">
+            <ul class="navigation">
+                <li>
+                    <a href="feed.html" title="Home"><i class="bi bi-house navIcons"></i></a>
+                </li>
+                <li>
+                    <a href="profile.html" title="My Profile">
+                        <i class="bi bi-person navIcons"></i>
+                    </a>
+                </li>
+                <li><a href="#" title="Messenger"><i class="bi bi-messenger navIcons"></i></a></li>
+                <li><a href="#" title="Video"><i class="bi bi-camera-reels navIcons"></i></a></li>
+            </ul>
+        </nav>
+
+        <ul class="links">
+            <li><a href="landingPage.html" title="To Landing page"><i class="bi bi-plus-circle navIcons"></i></a></li>
+            <li><a href="#" class="bellIcon" title="Notifications"><i class="bi bi-bell navIcons"></i>
+                    <span>12</span></a></li>
+            <li>
+                <div class="accountSettings">
+                    <button id="accountSettingsButton"><i class="bi bi-gear navIcons"></i></button>
+                    <div class="accountSettingsMenu">
+                        <button>Profile Settings</button>
+                        <button id="logoutButton">Logout</button>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </header>
+
+    <main>
+        <aside class="leftContent">
+            <div class="profileUserInfo">
+                <a href="profile.html"><img src="../assests/profile.jpg" alt="user profile" class="profileImage"><span
+                        class="profileName"><strong> Sergiu
+                            Savin</strong></span></a>
+            </div>
+            <ul class="leftNavigation">
+                <li><a href="leftNavFriends.html"><i class="bi bi-people-fill navIcons"></i><strong>
+                            Friends</strong></a></li>
+                <hr style="border: 0">
+                <hr style="border: 0">
+                <hr style="border: 0">
+                <li><a href="leftNavFeeds.html"><i class="bi bi-card-image navIcons"></i><strong> Feeds</strong></a>
+                </li>
+                <hr style="border: 0">
+                <hr style="border: 0">
+                <hr style="border: 0">
+                <li><a href="leftNavGroups.html"><i class="bi bi-person-circle navIcons"></i><strong>
+                            Groups</strong></a></li>
+                <hr style="border: 0">
+                <hr style="border: 0">
+                <hr style="border: 0">
+                <li><a href="leftNavVideo.html"><i class="bi bi-play-btn navIcons"></i><strong> Video</strong></a></li>
+                <hr style="border: 0">
+                <hr style="border: 0">
+                <hr style="border: 0">
+                <li><a href="leftNavMemories.html"><i class="bi bi-clock navIcons"></i><strong> Memories</strong></a>
+                </li>
+                <hr style="border: 0">
+                <hr style="border: 0">
+                <hr style="border: 0">
+                <li id="savedItems"><a href="#"><i class="bi bi-bookmark navIcons"></i><strong> Saved</strong></a></li>
+                <hr style="border: 0">
+                <hr style="border: 0">
+                <hr style="border: 0">
+                <li><a href="leftNavPages.html"><i class="bi bi-file-earmark navIcons"></i><strong> Pages</strong></a>
+                </li>
+                <hr style="border: 0">
+                <hr style="border: 0">
+                <hr style="border: 0">
+                <li><a href="leftNavEvents.html"><i class="bi bi-calendar2-event navIcons"></i><strong>
+                            Events</strong></a></li>
+                <hr style="border: 0">
+                <hr style="border: 0">
+                <hr style="border: 0">
+                <!-- <li><a href="#"><i class="bi bi-messenger navIcons"></i><strong> Messenger</strong></a></li>
+                <hr style="border: 0">
+                <hr style="border: 0"> -->
+                <li id="bloodDonation"><a href="#"><i class="bi bi-droplet navIcons"></i><strong> Blood
+                            Donations</strong></a></li>
+                <hr style="border: 0">
+                <hr style="border: 0">
+                <hr style="border: 0">
+                <!-- <li id="climateCenter"><a href="#"><i class="bi bi-tree navIcons"></i><strong> Climate Science Center</strong></a></li>
+                <hr style="border: 0">
+                <hr style="border: 0"> -->
+                <!-- <li id="playGames"><a href="#"><i class="bi bi-joystick navIcons"></i><strong> Play games</strong></a></li>
+                <hr style="border: 0">
+                <hr style="border: 0"> -->
+                <!-- <li id="videoGames"><a href="#"><i class="bi bi-controller navIcons"></i><strong> Gaming Video</strong></a></li>
+                <hr style="border: 0">
+                <hr style="border: 0"> -->
+                <li id="marketplace"><a href="#"><i class="bi bi-shop-window navIcons"></i><strong>
+                            Marketplace</strong></a></li>
+                <hr style="border: 0">
+                <hr style="border: 0">
+                <hr style="border: 0">
+                <li id="adActivity"><a href="#"><i class="bi bi-activity navIcons"></i><strong> Recent ad
+                            activity</strong></a></li>
+                <hr style="border: 0">
+                <hr style="border: 0">
+                <hr style="border: 0">
+                <!-- <li id="adsManager"><a href="#"><i class="bi bi-badge-ad navIcons"></i><strong> Ads Manager</strong></a></li>
+                <hr style="border: 0">
+                <hr style="border: 0"> -->
+                <!-- <li id="ordersPayments"><a href="#"><i class="bi bi-credit-card navIcons"></i><strong> Orders and payments</strong></a></li>
+                <hr style="border: 0">
+                <hr style="border: 0"> -->
+                <li id="fundraisers"><a href="#"><i class="bi bi-heart navIcons"></i><strong> Fundraisers</strong></a>
+                </li>
+                <hr style="border: 0">
+                <hr style="border: 0">
+            </ul>
+        </aside>>
+
+        <section class="mainContent">
+
+            <div class="post">
+                <div class="postHeader">
+                    <div class="profileUserInfo">
+                        <a href=""><img src="../assests/profile.jpg" alt="user profile" class="profileImage"></a>
+                        <div class="profileName">
+                            <span>Sergiu Savin</span>
+                            <span>06 Dec 2023</span>
+                        </div>
+                    </div>
+
+                    <div class="profileOptionsWrapper">
+                        <button class="profileOptions"><i class="bi bi-three-dots"></i></button>
+                        <div class="profileOptionsDropdown">
+                            <button>Edit this post</button>
+                            <button>Remove this post</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <div class="imgWrapper">
+                        <img src="../assests/post.jpg" alt="travel post" class="imgContent">
+                        <div class="infoIconWrapper">
+                            <i class="bi bi-info-circle infoIcon" tabindex="1"></i>
+                            <p class="infoMessage">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+                                quasi vero dolores esse
+                                deleniti quod tenetur totam et. Laborum dolores provident, suscipit blanditiis eaque
+                                quis.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <strong class="postTitle">Post title</strong>
+
+                    <p class="postDescription">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident consequatur laborum quaerat
+                        ut nesciunt necessitatibus reiciendis fuga quibusdam consequuntur animi!
+                    </p>
+                    <a href="landingPage.html"><strong>Read more..</strong></a>
+                </div>
+
+                <div class="reacts">
+                    <div class="likesInfo">
+                        <i class="bi bi-hand-thumbs-up reactsIcons"></i>
+                        <span id="likesNumber"></span> <span> likes</span>
+                    </div>
+
+                    <div class="commentsInfo">
+                        <span id="sharesNumber">15</span> <span> shares</span>
+                        <i class="bi bi-chat-dots reactsIcons"></i>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="reactsActions">
+                    <ul class="actions">
+                        <li class="reaction" id="likeButton">
+                            <i class="bi bi-hand-thumbs-up"></i>
+                            <span>Like</span>
+                        </li>
+                        <li class="reaction" id="commentButton">
+                            <i class="bi bi-chat-dots"></i>
+                            <span>Comments</span>
+                        </li>
+                        <li class="reaction" id="shareButton">
+                            <i class="bi bi-share"></i>
+                            <span>Share</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <hr>
+
+                <div class="commentSection">
+                    <a href=""><img src="../assests/profile.jpg" alt="user profile" class="profileImage"></a>
+                    <input type="text" placeholder="Adauga un comentariu" class="newCommentField" id="commentInput">
+                    <button class="insertCommentButton" id="commentInputButton"><i class="bi bi-send"></i></button>
+                </div>
+
+                <div class="userComments">
+
+                    <div class="commentContent">
+                        <div class="profileUserComment">
+                            <a href=""><img src="../assests/profile.jpg" alt="user profile" class="profileImage"></a>
+                            <span>Username</span>
+                        </div>
+
+                        <div class="userCommentText">
+                            <span id="commentMessage">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit,
+                                a accusamus.
+                                Accusantium
+                                recusandae placeat cupiditate a possimus ipsam doloremque sit.</span>
+                            <div class="emojiReaction">🥳</div>
+                            <span id="removeCommentButton">Remove this comment</span>
+                        </div>
+
+                        <div class="commentReaction">
+                            <strong class="commentReactionButton">Like</strong>
+                            <strong class="commentReactionButton">Comment</strong>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+        <aside class="rightContent">
+            <h4>Contacts</h4>
+            <div class="onlineUserInfo">
+                <ul class="rightNavigation">
+                    <li><a href="#"><img src="../assests/Username 1.jpg" alt="user profile" class="profileImage"><i
+                                class="bi bi-dot bs-success"></i>
+                            <span class="onlineUser"><strong> Username 1</strong></span>
+                        </a>
+                    </li>
+                    <!-- <li><a href="#"><img src="../assests/Username 2.jpg" alt="user profile" class="profileImage"><i
+                                class="bi bi-dot bs-success"></i>
+                            <span class="onlineUser"><strong> Username 2</strong></span>
+                        </a>
+                    </li> -->
+                    <li><a href="#"><img src="../assests/Username 3.jpg" alt="user profile" class="profileImage"><i
+                                class="bi bi-dot bs-success"></i>
+                            <span class="onlineUser"><strong> Username 3</strong></span>
+                        </a>
+                    </li>
+                    <li><a href="#"><img src="../assests/Username 4.jpeg" alt="user profile" class="profileImage"><i
+                                class="bi bi-dot bs-success"></i>
+                            <span class="onlineUser"><strong> Username 4</strong></span>
+                        </a>
+                    </li>
+                    <li><a href="#"><img src="../assests/Username 5.jpeg" alt="user profile" class="profileImage"><i
+                                class="bi bi-dot bs-success"></i>
+                            <span class="onlineUser"><strong> Username 5</strong></span>
+                        </a>
+                    </li>
+                    <li><a href="#"><img src="../assests/Username 6.jpg" alt="user profile" class="profileImage"><i
+                                class="bi bi-dot bs-success"></i>
+                            <span class="onlineUser"><strong> Username 6</strong></span>
+                        </a>
+                    </li>
+                    <li><a href="#"><img src="../assests/Username 7.jpg" alt="user profile" class="profileImage"><i
+                                class="bi bi-dot bs-success"></i>
+                            <span class="onlineUser"><strong> Username 7</strong></span>
+                        </a>
+                    </li>
+                    <li><a href="#"><img src="../assests/Username 8.jpg" alt="user profile" class="profileImage"><i
+                                class="bi bi-dot bs-success"></i>
+                            <span class="onlineUser"><strong> Username 8</strong></span>
+                        </a>
+                    </li>
+                    <li><a href="#"><img src="../assests/Username 9.jpg" alt="user profile" class="profileImage"><i
+                                class="bi bi-dot bs-success"></i>
+                            <span class="onlineUser"><strong> Username 9</strong></span>
+                        </a>
+                    </li>
+                    <li><a href="#"><img src="../assests/Username 10.jpg" alt="user profile" class="profileImage"><i
+                                class="bi bi-dot bs-success"></i>
+                            <span class="onlineUser"><strong> Username 10</strong></span>
+                        </a>
+                    </li>
+                    <li><a href="#"><img src="../assests/Username 11.jpg" alt="user profile" class="profileImage"><i
+                                class="bi bi-dot bs-success"></i>
+                            <span class="onlineUser"><strong> Username 11</strong></span>
+                        </a>
+                    </li>
+                    <li><a href="#"><img src="../assests/Username 12.jpg" alt="user profile" class="profileImage"><i
+                                class="bi bi-dot bs-success"></i>
+                            <span class="onlineUser"><strong> Username 12</strong></span>
+                        </a>
+                    </li>
+                    <hr>
+                </ul>
+            </div>
+            <h4>Group conversations</h4>
+            <div class="onlineGroupInfo">
+                <ul class="rightNavigation">
+                    <li><a href="#"><i class="bi bi-people navIcons"></i><i class="bi bi-dot bs-success"></i>
+                            <span class="onlineGroup"><strong> Messenger Group 1</strong></span>
+                        </a>
+                    </li>
+                    <li><a href="#"><i class="bi bi-people navIcons"></i><i class="bi bi-dot bs-success"></i>
+                            <span class="onlineGroup"><strong> Messenger Group 2</strong></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+
+    <script src="../js/feed.js"></script>
+
+</body>
+
+</html>

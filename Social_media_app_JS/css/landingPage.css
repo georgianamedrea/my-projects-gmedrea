@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    background: gray url('https://www.almosthomerestaurant.com/wp-content/uploads/2017/12/Screen-Shot-2017-12-07-at-9.58.26-AM.png');
+    background-size: cover;
+    height: 35rem;
+    color: white;
+}
+
+header .backImage {
+    width: 3rem;
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-left: 12rem;
+    display: block;
+    padding-top: 3rem;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin: 2rem 5rem 1.2rem;
+}
+
+header h1 span {
+    text-transform: uppercase;
+    display: block;
+    font-size: 3rem;
+    color: #ffbf00;
+    position: relative;
+    z-index: 1;
+}
+
+header h1 span::before {
+    content: ' ';
+    position: absolute;
+    width: 9rem;
+    height: 1.5rem;
+    background-color: teal;
+    bottom: 0;
+    z-index: -1;
+}
+
+header .headerDescription {
+    font-weight: bold;
+    max-width: 45rem;
+    margin: 0 5rem 3rem;
+    font-size: 1.1rem;
+}
+
+header .formContainer {
+    background-color: white;
+    font-weight: bold;
+    padding: 2rem;
+    max-width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5rem;
+    border-radius: 1rem;
+    box-shadow: 0.5rem 0.5rem 0.5rem #ffbf00;
+}
+
+header .formContainer label {
+    color: teal;
+}
+
+header .formContainer p {
+    color: gray;
+}
+
+header .formContainer form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+header .formContainer form input[type="text"] {
+    border: 1px solid darkgray;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+}
+
+header .formContainer form input[type="tel"] {
+    border: 1px solid darkgray;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+}
+
+header .formContainer form input[type="button"] {
+    background-color: #ffbf00;
+    border: none;
+    border-radius: 0.5rem;
+    color: white;
+    padding: 1rem 0;
+    width: 30%;
+    font-size: 1.2rem;
+    align-self: center;
+    cursor: pointer;
+}
+
+header .formContainer form input[type="button"]:hover {
+    background-color: #d19d00
+}
+
+.callToAction {
+    display: flex;
+    flex-direction: column;
+}
+
+.callToAction .callToActionMessage {
+    padding: 5rem;
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.callToAction .callToActionMessage h2 {
+    text-transform: uppercase;
+    position: relative;
+}
+
+.callToAction .callToActionMessage h2::before {
+    content: ' ';
+    position: absolute;
+    width: 9rem;
+    height: 0.8rem;
+    background-color: #3ecdcd;
+    bottom: 0;
+    z-index: -1;
+    left: -4rem;
+}
+
+.callToAction .callToActionMessage {
+    font-size: 1.3rem;
+    margin-top: 13rem;
+}
+
+.callToAction img {
+    border-radius: 5rem;
+    padding: 2rem;
+}

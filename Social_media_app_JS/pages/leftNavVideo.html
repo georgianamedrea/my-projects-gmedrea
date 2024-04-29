@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video | Left Navigation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../css/leftNavVideo.css">
+</head>
+
+<body>
+    <a href="feed.html"><img src="../assests/back.png" class="backImage" alt="back icon"></a>
+
+    <section class="mainContent">
+
+        <h2><strong>Videos</strong></h2>
+        <br>
+        <div class="post">
+            <div class="postHeader">
+                <div class="profileUserInfo">
+                    <a href=""><img src="../assests/Username 8.jpg" alt="user profile" class="profileImage"></a>
+                    <div class="profileName">
+                        <span>Username 8</span>
+                        <span>22 Feb 2024</span>
+                    </div>
+                </div>
+
+                <div class="profileOptionsWrapper">
+                    <button class="profileOptions"><i class="bi bi-three-dots"></i></button>
+                    <div class="profileOptionsDropdown">
+                        <button id="hidePost">Hide this post</button>
+                        <button id="reportPost">Report this post</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="content">
+                <div class="videoWrapper">
+                    <iframe width="700" height="400" src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1">
+                    </iframe>
+                </div>
+
+
+                <strong class="postTitle">Post title</strong>
+
+                <p class="postDescription">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius sint molestiae iure sit ipsa.
+                    Inventore nam, quas excepturi id in eveniet commodi aperiam necessitatibus sit. Delectus
+                    consequuntur qui quo mollitia.
+                </p>
+            </div>
+
+            <div class="reacts">
+                <div class="likesInfo">
+                    <i class="bi bi-hand-thumbs-up reactsIcons"></i>
+                    <span id="likesNumber"></span> <span> likes</span>
+                </div>
+
+                <div class="commentsInfo">
+                    <span id="sharesNumber">5</span> <span> shares</span>
+                    <i class="bi bi-chat-dots reactsIcons"></i>
+                </div>
+            </div>
+
+            <hr width="100%">
+
+            <div class="reactsActions">
+                <ul class="actions">
+                    <li class="reaction" id="likeButton">
+                        <i class="bi bi-hand-thumbs-up"></i>
+                        <span>Like</span>
+                    </li>
+                    <li class="reaction" id="commentButton">
+                        <i class="bi bi-chat-dots"></i>
+                        <span>Comments</span>
+                    </li>
+                    <li class="reaction" id="shareButton">
+                        <i class="bi bi-share"></i>
+                        <span>Share</span>
+                    </li>
+                </ul>
+            </div>
+
+            <hr width="100%">
+
+            <div class="commentSection">
+                <a href=""><img src="../assests/profile.jpg" alt="user profile" class="profileImage"></a>
+                <input type="text" placeholder="Adauga un comentariu" class="newCommentField" id="commentInput">
+                <button class="insertCommentButton" id="commentInputButton"><i class="bi bi-send"></i></button>
+            </div>
+
+            <div class="userComments">
+
+                <div class="commentContent">
+                    <div class="profileUserComment">
+                        <a href=""><img src="../assests/profile.jpg" alt="user profile" class="profileImage"></a>
+                        <span>Username</span>
+                    </div>
+
+                    <div class="userCommentText">
+                        <span id="commentMessage">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit,
+                            a accusamus.
+                            Accusantium
+                            recusandae placeat cupiditate a possimus ipsam doloremque sit.</span>
+                        <div class="emojiReaction">🥳</div>
+                        <span id="removeCommentButton">Remove this comment</span>
+                    </div>
+
+                    <div class="commentReaction">
+                        <strong class="commentReactionButton">Like</strong>
+                        <strong class="commentReactionButton">Comment</strong>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+    <script src="../js/leftNavVideo.js"></script>
+</body>
+
+</html>

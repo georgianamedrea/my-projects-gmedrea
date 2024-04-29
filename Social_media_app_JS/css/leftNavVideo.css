@@ -3,9 +3,21 @@
     font-family: 'Poppins', sans-serif;
 }
 
-ul {
-    list-style: none;
-    padding: 0;
+.backImage {
+    width: 2rem;
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+}
+
+h2 {
+    margin-left: 550px;
+    border: 2px solid whitesmoke;
+    background-color: lightblue;
+    width: 92px;
+    padding: 2px;
+    border-radius: 10px;
+    margin-top: 50px;
 }
 
 a {
@@ -13,241 +25,10 @@ a {
     color: inherit;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 5rem;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 10;
-    background-color: lightblue;
-}
 
-.mainSearch {
-    display: flex;
-    align-items: center;
-}
-
-.mainSearch .logo {
-    padding: 1rem;
-    font-size: 3rem;
-    color: royalblue;
-}
-
-.mainSearch .logo:hover {
-    color: darkblue;
-}
-
-.mainSearch .searchInput {
-    height: 3rem;
-    border-radius: 1.5rem;
-    padding: 0 1rem;
-    border-color: beige;
-}
-
-.mainSearch .searchInput:focus {
-    border: 0.35rem solid teal;
-}
-
-.navigation,
-.links {
-    display: flex;
-}
-
-.accountSettings {
-    position: relative;
-}
-
-.accountSettings button {
-    cursor: pointer;
-    border: none;
-    background-color: inherit;
-}
-
-.accountSettingsMenu {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 75px;
-    right: 0;
-    width: 180px;
-    background-color: grey;
-}
-
-.accountSettingsMenu button {
-    padding: 10px 0;
-    cursor: pointer;
-}
-
-.accountSettingsMenu button:hover {
-    background-color: #add8e6;
-}
-
-
-.navigation>li>a {
-    border-radius: 50%;
-    background-color: aquamarine;
-    margin: 0 0.35rem;
-    display: flex;
-}
-
-.navigation>li>a:hover {
-    background-color: teal;
-    border: 1px solid royalblue;
-}
-
-.navIcons {
-    font-size: 3rem;
-    color: royalblue;
-    margin: 0 0.5rem;
-}
-
-.navIcons:hover {
-    color: darkblue;
-}
-
-.bellIcon {
-    position: relative;
-    display: block;
-}
-
-.bellIcon span {
-    width: 1.5rem;
-    height: 1.5rem;
-    background-color: red;
-    border-radius: 50%;
-    position: absolute;
-    top: 0;
-    right: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 0.9rem;
-    color: white;
-    font-weight: bold;
-}
-
-main {
-    display: flex;
-    justify-content: center;
-    margin-top: 5rem;
-}
-
-.leftContent,
-.rightContent {
-    width: 17%;
-    border: 5px solid whitesmoke;
-    overflow: auto;
-    height: 90vh;
-    position: fixed;
-}
-
-.leftContent {
-    left: 0;
-}
-
-.rightContent {
-    right: 0;
-}
-
-.leftNavigation .navIcons {
-    font-size: 1.5rem;
-    color: royalblue;
-}
-
-.leftNavigation>li>a:hover {
-    color: lightgrey;
-}
-
-.leftNavigation .bi:hover {
-    color: lightgrey;
-}
-
-.leftContent .profileUserInfo:hover {
-    color: lightgrey;
-}
-
-.leftContent .profileUserInfo .profileName {
-    margin-left: 0.7rem;
-    position: relative;
-    bottom: 15px;
-}
-
-.leftContent .profileImage {
-    margin-top: 5%;
-}
-
-.onlineGroupInfo .navIcons {
-    font-size: 1.5rem;
-    color: royalblue;
-}
-
-.rightContent .profileImage {
-    position: absolute;
-}
-
-.onlineUserInfo .bi {
-    font-size: 3rem;
-    color: green;
-    position: relative;
-    left: 1.7rem;
-    top: 0.5rem;
-    z-index: 1;
-}
-
-.onlineGroupInfo .bi-dot {
-    font-size: 3rem;
-    color: green;
-    position: relative;
-    left: -1.2rem;
-    top: 0.5rem;
-    z-index: 1;
-}
-
-.rightContent .onlineUserInfo .onlineUser:hover {
-    color: lightgrey;
-}
-
-.rightContent .onlineGroupInfo .onlineGroup:hover {
-    color: lightgrey;
-}
-
-h4 {
-    opacity: 0.5;
-    margin-left: 2%;
-    margin-top: 5%;
-}
-
-.profileImage {
-    margin-left: 2%;
-}
-
-.rightContent .onlineUserInfo .onlineUser {
-    margin-left: 0.8rem;
-    position: relative;
-    bottom: 15px;
-}
-
-.rightContent .onlineGroupInfo .onlineGroup {
-    margin-left: -2rem;
-    position: relative;
-    bottom: 5px;
-}
-
-hr {
-    opacity: 0.6;
-}
-
-.onlineGroupInfo {
-    margin-top: -10%;
-    line-height: 1;
-}
-
-.onlineUserInfo {
-    line-height: 1.3;
+ul {
+    list-style: none;
+    padding: 0;
 }
 
 .mainContent {
@@ -255,9 +36,12 @@ hr {
 }
 
 .mainContent .post {
+    display: flex;
+    flex-direction: column;
     box-shadow: 5px 5px 5px 5px #888;
-    margin: 3rem 0;
+    margin: 5% 0 0 75%;
     padding: 1rem;
+    width: 100%;
 }
 
 .mainContent .post .postHeader {
@@ -285,29 +69,24 @@ hr {
     width: 2rem;
     height: 2rem;
     border-radius: 50%;
+    text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    cursor: pointer;
 }
 
 .mainContent .post .postHeader .profileOptions:hover {
     background-color: lightgray;
 }
 
-.content .imgWrapper {
+.profileOptionsWrapper {
     position: relative;
-}
-
-.content .imgWrapper .imgContent {
-    max-width: 100%;
 }
 
 .profileOptionsDropdown {
     position: absolute;
     z-index: 1;
-    /* right: 10px; */
-    margin-left: -128px;
+    right: 10px;
     width: 150px;
     display: flex;
     justify-content: center;
@@ -315,36 +94,13 @@ hr {
     display: none;
 }
 
-.content .imgWrapper {
+.content .videoWrapper {
     position: relative;
-}
-
-.content .imgWrapper .infoIcon {
-    position: absolute;
-    right: 1rem;
-    bottom: -0.5rem;
-    font-size: 2rem;
-    background-color: gray;
-    border-radius: 50%;
-    width: 2rem;
-    height: 2rem;
     display: flex;
-    cursor: pointer;
-    color: white;
-}
-
-.infoIconWrapper {
-    position: relative;
-}
-
-.infoMessage {
-    display: none;
-    position: absolute;
-    background-color: white;
-    border: 3px solid lightgrey;
-    border-radius: 10px;
-    top: -10px;
-    padding: 10px;
+    flex-wrap: wrap;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
 }
 
 .content .postTitle {
@@ -363,6 +119,10 @@ hr {
 
 .post .reacts .reactsIcons {
     color: blue;
+}
+
+hr {
+    opacity: 0.6;
 }
 
 .post .actions {

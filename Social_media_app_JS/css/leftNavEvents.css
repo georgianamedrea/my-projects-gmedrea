@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+}
+
+.backImage {
+    width: 2rem;
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+}
+
+.mainContent ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+    padding: 5px 200px 10px 400px;
+    margin-top: 2%;
+}
+
+.mainContent ul li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border: 2px solid grey;
+    width: 450px;
+    padding: 10px;
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+
+.mainContent ul li button {
+    width: 350px;
+    height: 30px;
+    margin: 1%;
+    border-radius: 10%;
+}
+
+.mainContent ul li #interestedBtn {
+    cursor: pointer;
+}
+
+h3 {
+    border: 2px solid whitesmoke;
+    background-color: lightblue;
+    width: 250px;
+    padding: 2px;
+    border-radius: 10px;
+    margin-left: 400px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+.mainContent ul li .interested {
+    background-color: blue;
+    color: white;
+}

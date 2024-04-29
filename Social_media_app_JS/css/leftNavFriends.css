@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+}
+
+.backImage {
+    width: 2rem;
+    position: fixed;
+    top: 1rem;
+    left: 1rem;
+}
+
+.mainContent {
+    display: flex;
+    flex-direction: column;
+}
+
+.mainContent ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: flex-start;
+    padding: 0 300px 80px 470px;
+}
+
+.mainContent ul li {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    border: 2px solid grey;
+    width: 170px;
+    padding: 10px;
+    background-color: aliceblue;
+    border-radius: 10px;
+}
+
+.mainContent ul button {
+    width: 90px;
+    height: 30px;
+    margin: 1%;
+    border-radius: 10%;
+}
+
+.mainContent ul .userName {
+    text-align: center;
+}
+
+.mainContent ul #friendRequest #confirm {
+    cursor: pointer;
+    margin-left: 18%;
+    background-color: rgb(59, 112, 247);
+    color: white;
+}
+
+.mainContent ul #friendRequest #remove {
+    cursor: pointer;
+    margin-left: 18%;
+}
+
+.mainContent ul #suggestedFriend #addFriend {
+    cursor: pointer;
+    margin-left: 18%;
+    background-color: rgb(198, 223, 246);
+    color: blue;
+}
+
+.mainContent ul #suggestedFriend #removeRequest {
+    cursor: pointer;
+    margin-left: 18%;
+}
+
+
+h2 {
+    border: 2px solid whitesmoke;
+    background-color: lightblue;
+    width: 130px;
+    padding: 2px;
+    border-radius: 10px;
+    margin-left: 80px;
+    margin-top: 30px;
+    position: fixed;
+}
+
+h3 {
+    margin-left: 370px;
+}
+
+.leftContent #friendList {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    list-style-type: none;
+    position: fixed;
+    width: 300px;
+    height: 750px;
+    border: 1px solid whitesmoke;
+    overflow: auto;
+    margin-top: 70px;
+    padding: 10px;
+}
+
+.leftContent #friendList li {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.leftContent img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.leftContent #friendList .profileName {
+    text-align: center;
+}
+
+.leftContent button {
+    display: none;
+}
