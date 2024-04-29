@@ -1,0 +1,225 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: lightblue;
+}
+
+.mainSearch {
+    display: flex;
+    align-items: center;
+}
+
+.mainSearch .logo {
+    padding: 1rem;
+    font-size: 3rem;
+    color: royalblue;
+}
+
+.mainSearch .logo:hover {
+    color: darkblue;
+}
+
+.mainSearch .searchInput {
+    height: 3rem;
+    border-radius: 1.5rem;
+    padding: 0 1rem;
+    border-color: beige;
+}
+
+.mainSearch .searchInput:focus {
+    border: 0.35rem solid teal;
+}
+
+.navigation,
+.links {
+    display: flex;
+}
+
+.navigation>li>a {
+    border-radius: 50%;
+    background-color: aquamarine;
+    margin: 0 0.35rem;
+    display: flex;
+}
+
+.navigation>li>a:hover {
+    background-color: teal;
+    border: 1px solid royalblue;
+}
+
+.navIcons {
+    font-size: 3rem;
+    color: royalblue;
+    margin: 0 0.5rem;
+}
+
+.navIcons:hover {
+    color: darkblue;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5rem;
+}
+
+.leftContent,
+.rightContent {
+    width: 17%;
+    border: 5px solid whitesmoke;
+    overflow: auto;
+    height: 90vh;
+}
+
+.mainContent {
+    width: 40%;
+    position: relative;
+    right: 30%;
+}
+
+.mainContent .post {
+    box-shadow: 5px 5px 5px 5px #888;
+    margin: 3rem 0;
+    padding: 1rem;
+}
+
+.profileImage {
+    width: 3rem;
+}
+
+.imgContent {
+    max-width: 100%;
+}
+
+.leftContent {
+    position: fixed;
+    left: 0;
+}
+
+.rightContent {
+    position: fixed;
+    right: 0;
+}
+
+.leftNavigation .navIcons {
+    font-size: 1.5rem;
+    color: royalblue;
+}
+
+.leftNavigation>li>a:hover {
+    color: lightgrey;
+}
+
+.leftNavigation .bi:hover {
+    color: lightgrey;
+}
+
+.leftContent .profileUserInfo:hover {
+    color: lightgrey;
+}
+
+.leftContent .profileUserInfo .profileName {
+    margin-left: 0.7rem;
+    position: relative;
+    bottom: 15px;
+}
+
+.profileImage {
+    border-radius: 50%;
+}
+
+.leftContent .profileImage {
+    margin-top: 5%;
+}
+
+.onlineGroupInfo .navIcons {
+    font-size: 1.5rem;
+    color: royalblue;
+}
+
+.rightContent .profileImage {
+    position: absolute;
+}
+
+.onlineUserInfo .bi {
+    font-size: 3rem;
+    color: green;
+    position: relative;
+    left: 1.7rem;
+    top: 0.5rem;
+    z-index: 1;
+}
+
+.onlineGroupInfo .bi-dot {
+    font-size: 3rem;
+    color: green;
+    position: relative;
+    left: -1.2rem;
+    top: 0.5rem;
+    z-index: 1;
+}
+
+.rightContent .onlineUserInfo .profileName:hover {
+    color: lightgrey;
+}
+
+.rightContent .onlineGroupInfo .groupName:hover {
+    color: lightgrey;
+}
+
+h4 {
+    opacity: 0.5;
+    margin-left: 2%;
+    margin-top: 5%;
+}
+
+.profileImage {
+    margin-left: 2%;
+}
+
+.rightContent .onlineUserInfo .profileName {
+    margin-left: 0.8rem;
+    position: relative;
+    bottom: 15px;
+}
+
+.rightContent .onlineGroupInfo .groupName {
+    margin-left: -2rem;
+    position: relative;
+    bottom: 5px;
+}
+
+hr {
+    opacity: 0.6;
+}
+
+.onlineGroupInfo {
+    margin-top: -10%;
+    line-height: 1;
+}
+
+.onlineUserInfo {
+    line-height: 1.3;
+}
