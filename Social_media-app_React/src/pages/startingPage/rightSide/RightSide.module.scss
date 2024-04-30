@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+}
+
+.rightContainer {
+    top: 5rem;
+    right: 0;
+    width: 20rem;
+    height: 90vh;
+    border: 5px solid whitesmoke;
+    position: fixed;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+
+    .onlineUserName {
+        margin-left: 1rem;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .rightContainer {
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .rightContainer {
+       display: none;
+    }
+}

@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+}
+
+.leftContainer {
+    top: 5rem;
+    left: 0;
+    width: 20rem;
+    height: 90vh;
+    border: 5px solid whitesmoke;
+    position: fixed;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+
+    a {
+        text-decoration: none;
+        color: black;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    .pageName {
+        margin-left: 1rem;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .leftContainer {
+        display: none;
+    }
+}

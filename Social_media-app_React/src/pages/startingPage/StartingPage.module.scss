@@ -1,0 +1,32 @@
+* {
+    box-sizing: border-box;
+}
+
+.mainContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+
+    .aside {
+        width: 15rem;
+        background-color: lightgray;
+        height: 50vh;
+        position: fixed;
+        top: 5rem;
+
+        &.leftSide {
+            left: 0
+        }
+
+        &.rightSide {
+            right: 0;
+        }
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .mainContainer {
+        justify-content: space-between;
+    }
+}
