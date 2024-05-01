@@ -15,7 +15,7 @@ async function onSubmit(e) {
         const articles = await API.getNews(inputValue)
 
         if(articles.length === 0) {
-            updateNewsList(`<p> Nu am gasit rezultate </p>`)
+            updateNewsList(`<p> No results </p>`)
             return;
         }
         console.log(articles)
@@ -31,6 +31,6 @@ async function onSubmit(e) {
 
 function onError(error) {
     console.error(error)
-    updateNewsList(`<p> Nu am gasit rezultate </p>`)
+    updateNewsList(`<p> No results </p>`)
 }
 

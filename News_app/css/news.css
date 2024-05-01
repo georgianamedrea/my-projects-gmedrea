@@ -22,7 +22,7 @@ input[type="submit"] {
 }
 
 #articlesWrapper {
-    margin-top: 10px;
+    margin-top: 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -32,14 +32,16 @@ input[type="submit"] {
 
 .article-card {
     width: 30%;
+    height: 600px;
     text-align: center;
     border-radius: 15px;
     background-color: #c1c1c1;
-    padding: 20px;
+    padding: 25px;
 }
 
 .article-img {
-    width: 100%;
+    max-width: 100%;
+    max-height: 50%;
     border-radius: 15px;
 }
 
