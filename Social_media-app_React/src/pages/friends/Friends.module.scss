@@ -5,33 +5,6 @@
 .friendsCotainer {
     display: flex;
 
-    .friendList {
-        top: 5rem;
-        left: 0;
-        width: 20rem;
-        height: 89vh;
-        border: 5px solid whitesmoke;
-        position: fixed;
-        overflow: auto;
-        overflow-x: hidden;
-        display: flex;
-        flex-direction: column;
-
-        .friendElement {
-            top: -1rem;
-
-            .listTitle {
-                position: relative;
-                align-self: flex-start;
-            }
-
-            .friendName {
-                position: relative;
-                left: 2rem;
-            }
-        }
-    }
-
     .requests {
         display: flex;
         flex-direction: column;
@@ -42,8 +15,23 @@
 
         .titleRequests {
             position: relative;
-            left: 25rem;
             top: 0.2rem;
+            font-size: 130%;
+
+            span {
+                font-size: 150%;
+                color: purple;
+                display: inline-block;
+                position: relative;
+                left: 0.5rem;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                text-shadow: 0 0 5px lightpink;
+            }
+
+            hr {
+                clear: both;
+                visibility: hidden;
+            }
         }
 
         .friendRequestsContainer {
@@ -82,10 +70,10 @@
                     .confirmButton {
                         width: 6rem;
                         height: 2rem;
-                        background-color: rgb(59, 112, 247);
+                        background-color: rgb(27, 173, 173);
                         color: white;
                         border-radius: 10%;
-                        border: 1px solid blue;
+                        border: 1px solid teal;
                     }
 
                     .removeButton {
@@ -104,8 +92,18 @@
 
         .titleSuggested {
             position: relative;
-            left: 25rem;
             top: -14rem;
+            font-size: 130%;
+
+            span {
+                font-size: 150%;
+                color: purple;
+                display: inline-block;
+                position: relative;
+                left: 0.5rem;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                text-shadow: 0 0 5px lightpink;
+            }
         }
 
         .suggestedFriendsContainer {
@@ -144,10 +142,10 @@
                         position: relative;
                         width: 6rem;
                         height: 2rem;
-                        background-color: rgb(198, 223, 246);
-                        color: blue;
+                        background-color: rgb(27, 173, 173);
+                        color: white;
                         border-radius: 10%;
-                        border: 1px solid blue;
+                        border: 1px solid teal;
                     }
 
                     .removeButton {

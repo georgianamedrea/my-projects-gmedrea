@@ -19,7 +19,7 @@ const Navigation = () => {
     return (
         <header>
             <Link to='/'>
-                <div className={styles.logo}>Social Media App</div>
+                <div className={styles.logo}>Hola, amigos!</div>
             </Link>
 
             <nav>

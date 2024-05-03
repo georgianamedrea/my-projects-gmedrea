@@ -12,7 +12,7 @@ import Typography from '@mui/material/Typography';
 import { useState } from 'react';
 
 
-const FriendRequestElement = ({ imageUrl, name }) => {
+const FriendRequestElement = ({ imageUrl, name, onButtonClick, onRemoveClick}) => {
 
     const [isVisible, setIsVisible] = useState(true);
     const [hideButton, setHideButton] = useState(false);
@@ -20,12 +20,22 @@ const FriendRequestElement = ({ imageUrl, name }) => {
     let initialValue = "Remove"
     const [buttonText, setButtonText] = useState(initialValue)
 
+    const showRequest = () => {
+        setIsVisible((isVisible) => !isVisible)
+    }
+
+    const updateRemove = () => {
+        showRequest();
+        onRemoveClick()
+    }
+
     const handleClick = () => {
         setHideButton(!hideButton)
         setButtonText("Friends!")
         setTimeout((setIsVisible), 2000)
+        onButtonClick()
     }
-
+    
     return (
         <div>
             {isVisible && <Card sx={{ maxWidth: 180, maxHeight: 250 }} className={styles.friendRequest}>
@@ -42,7 +52,7 @@ const FriendRequestElement = ({ imageUrl, name }) => {
                 </CardContent>
                 <CardActions className={styles.button}>
                     <Button size="small" sx={{ border: 1, visibility: hideButton ? 'hidden' : 'display' }} className={styles.confirmButton} onClick={handleClick}>Confirm</Button>
-                    <Button size="small" sx={{ border: 1 }} className={styles.removeButton} onClick={() => setIsVisible((isVisible) => !isVisible)}>{buttonText}</Button>
+                    <Button size="small" sx={{ border: 1 }} className={styles.removeButton} onClick={updateRemove}>{buttonText}</Button>
                 </CardActions>
             </Card>}
         </div>

@@ -9,8 +9,8 @@ import UserProfilePage from './pages/profile/userProfile/UserProfilePage';
 import Layout from './components/Layout';
 import MyProfile from './pages/profile/MyProfile';
 import Friends from './pages/friends/Friends';
-import Events from './pages/events/Events';
-import Pages from './pages/pagesSection/Pages';
+import FriendRequestsList from './pages/friends/FriendRequestsList';
+import SuggestedFriends from './pages/friends/SuggestedFriends';
 
 function App() {
 
@@ -23,8 +23,6 @@ function App() {
           <Route path='/profile/:id' element={<UserProfilePage></UserProfilePage>} />
           <Route path='/my-profile' element={<MyProfile />} />
           <Route path='/friends' element={<Friends />} />
-          <Route path='/events' element={<Events/>}/>
-          <Route path='/pages-section' element={<Pages/>}/>
           <Route path='*' element={<NotFound />}></Route>
         </Routes>
       </Layout>

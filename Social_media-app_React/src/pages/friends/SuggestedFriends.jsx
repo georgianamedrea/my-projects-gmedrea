@@ -1,5 +1,7 @@
 import styles from './Friends.module.scss';
 
+import { useState } from 'react';
+
 import userName1 from '../../assets/images/userName1.jpg';
 import userName2 from '../../assets/images/userName2.jpg';
 import userName3 from '../../assets/images/userName3.jpg';
@@ -15,8 +17,7 @@ import userName12 from '../../assets/images/userName12.jpg';
 
 import SuggestedFriendElement from './SuggestedFriendElement';
 
-
-const SuggestedFriends = () => {
+    const SuggestedFriends = () => {
 
     const SuggestedFriendRequests = [
         {
@@ -141,9 +142,15 @@ const SuggestedFriends = () => {
         }
     ]
 
+    const [suggestedFriends, setSuggestedFriends] = useState(24)
+
+    const removeSuggested = () => {
+        setSuggestedFriends(suggestedFriends - 1)
+    }
+
     return (
         <>
-            <h3 className={styles.titleSuggested}>Suggested friends</h3>
+            <h3 className={styles.titleSuggested}>Suggested friends <span>{suggestedFriends}</span></h3>
             <div className={styles.suggestedFriendsContainer}>
                 {SuggestedFriendRequests.map((suggestedFriend) => {
                     return (
@@ -151,6 +158,7 @@ const SuggestedFriends = () => {
                             imageUrl={suggestedFriend.imageUrl}
                             name={suggestedFriend.name}
                             key={suggestedFriend.id}
+                            onButtonClick={removeSuggested}
                         />
                     )
                 })}

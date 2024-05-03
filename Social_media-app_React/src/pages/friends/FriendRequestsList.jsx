@@ -1,5 +1,9 @@
 import styles from './Friends.module.scss';
 
+import { useState } from 'react';
+
+import PropTypes from 'prop-types';
+
 import userName1 from '../../assets/images/userName1.jpg';
 import userName2 from '../../assets/images/userName2.jpg';
 import userName3 from '../../assets/images/userName3.jpg';
@@ -141,10 +145,26 @@ const FriendRequestsList = () => {
         }
     ]
 
+    const [friendsNumber, setFriendsNumber] = useState(24)
+
+    const addFriend = () => {
+        setFriendsNumber(friendsNumber + 1)
+    }
+
+    const [friendRequests, setFriendRequests] = useState(24)
+
+    const removeRequest = () => {
+        setFriendRequests(friendRequests - 1)
+    }
+
+    const updateFriends = () => {
+        addFriend();
+        removeRequest()
+    }
 
     return (
         <>
-            <h3 className={styles.titleRequests}>Friend requests</h3>
+            <h3 className={styles.titleRequests}>My Friends <span>{friendsNumber}</span> <hr />Friend Requests <span className={styles.splash}>{friendRequests}</span></h3>
             <div className={styles.friendRequestsContainer}>
                 {FriendRequests.map((friendRequest) => {
                     return (
@@ -152,6 +172,8 @@ const FriendRequestsList = () => {
                             imageUrl={friendRequest.imageUrl}
                             name={friendRequest.name}
                             key={friendRequest.id}
+                            onButtonClick={updateFriends}
+                            onRemoveClick={removeRequest}
                         />
                     )
                 })}
