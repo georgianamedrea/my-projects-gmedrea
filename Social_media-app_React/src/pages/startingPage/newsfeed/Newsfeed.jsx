@@ -28,16 +28,12 @@ import CommentsSection from './comments/CommentsSection';
 import DropDownList from './NewsfeedDropDownList';
 
 import { useState } from 'react';
-import { useSelector } from 'react-redux';
-import { selectUser } from '../../../redux/selectors';
 
 const Newsfeed = ({ postData }) => {
     const [isLiked, setIsLiked] = useState(false);
     const [likes, setLikes] = useState(Math.floor(Math.random() * 100))
     const [isShared, setIsShared] = useState(false)
     const [shares, setShares] = useState(Math.floor(Math.random() * 100))
-
-    const user = useSelector(selectUser)
 
     const postImages = {
         0: post1,

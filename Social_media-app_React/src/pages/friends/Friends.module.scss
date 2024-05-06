@@ -2,162 +2,284 @@
     box-sizing: border-box;
 }
 
-.friendsCotainer {
+.myFriendsCotainer {
     display: flex;
+    position: relative;
+    top: 5rem;
+    gap: 15rem;
 
-    .requests {
+    .menuList {
         display: flex;
         flex-direction: column;
-        gap: 10rem;
-        width: 70rem;
+        gap: 0.1rem;
+        list-style-type: none;
+        font-size: 130%;
+
+        .menuItem {
+            display: flex;
+            gap: 0.5rem;
+
+            p {
+                position: relative;
+                left: 0.5rem;
+
+                span {
+                    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                    text-shadow: 0 0 5px lightpink;
+                }
+            }
+
+            a {
+                padding: 10px 0 10px 10px;
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+                color: inherit;
+
+                &:global.active {
+                    color: purple;
+                }
+            }
+        }
+    }
+
+    .myFriendsList {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid whitesmoke;
         position: relative;
-        left: 25rem;
+        overflow: auto;
+        display: flex;
+        width: 70rem;
+        height: 50rem;
+        gap: 1rem;
+        padding: 0.2rem;
+        top: 3rem;
 
-        .titleRequests {
+        .myFriends {
+            padding: 0.2rem;
             position: relative;
-            top: 0.2rem;
-            font-size: 130%;
+            width: 10rem;
 
-            span {
-                font-size: 150%;
-                color: purple;
-                display: inline-block;
+            .myFriendName {
                 position: relative;
                 left: 0.5rem;
-                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-                text-shadow: 0 0 5px lightpink;
             }
 
-            hr {
-                clear: both;
-                visibility: hidden;
-            }
-        }
-
-        .friendRequestsContainer {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            border: 2px solid whitesmoke;
-            position: relative;
-            overflow: auto;
-            display: flex;
-            width: 70rem;
-            height: 50rem;
-            gap: 1rem;
-            padding: 0.2rem;
-            top: -9rem;
-
-            .friendRequest {
-                padding: 0.2rem;
+            .unfriendButton {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
                 position: relative;
-
-                .friendName {
-                    position: relative;
-                    top: -0.5rem;
-                }
-
-                .button {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
-                    position: relative;
-                    top: -1.7rem;
-                    gap: 0.2rem;
-
-                    .confirmButton {
-                        width: 6rem;
-                        height: 2rem;
-                        background-color: rgb(27, 173, 173);
-                        color: white;
-                        border-radius: 10%;
-                        border: 1px solid teal;
-                    }
-
-                    .removeButton {
-                        width: 6rem;
-                        height: 2rem;
-                        left: -0.2rem;
-                        background-color: lightgray;
-                        color: black;
-                        border-radius: 10%;
-                        border: 1px solid gray;
-                    }
-                }
+                top: -1rem;
+                left: 1.8rem;
+                border: 1px solid teal;
+                color: white;
+                background-color: rgb(27, 173, 173);
             }
         }
+    }
+}
 
+.requestsContainer {
+    display: flex;
+    position: relative;
+    top: 5rem;
+    gap: 15rem;
 
-        .titleSuggested {
-            position: relative;
-            top: -14rem;
-            font-size: 130%;
+    .menuList {
+        display: flex;
+        flex-direction: column;
+        gap: 0.1rem;
+        list-style-type: none;
+        font-size: 130%;
 
-            span {
-                font-size: 150%;
-                color: purple;
-                display: inline-block;
+        .menuItem {
+            display: flex;
+            gap: 0.5rem;
+
+            p {
                 position: relative;
                 left: 0.5rem;
-                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-                text-shadow: 0 0 5px lightpink;
+
+                span {
+                    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                    text-shadow: 0 0 5px lightpink;
+                }
+            }
+
+            a {
+                padding: 10px 0 10px 10px;
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+                color: inherit;
+
+                &:global.active {
+                    color: purple;
+                }
             }
         }
+    }
 
-        .suggestedFriendsContainer {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            border: 2px solid whitesmoke;
-            position: relative;
-            overflow: auto;
-            width: 70rem;
-            height: 50rem;
-            gap: 1rem;
+    .friendRequestsList {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid whitesmoke;
+        position: relative;
+        overflow: auto;
+        display: flex;
+        width: 70rem;
+        height: 50rem;
+        gap: 1rem;
+        padding: 0.2rem;
+        top: 3rem;
+
+        .friendRequest {
             padding: 0.2rem;
-            top: -23rem;
+            position: relative;
+            width: 10rem;
 
-            .suggestedFriend {
-                padding: 0.2rem;
+            .friendName {
+                position: relative;
+                left: 0.5rem;
+            }
 
-                .suggestedFriendName {
+            .button {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                top: -1.7rem;
+                gap: 0.2rem;
+
+                .confirmButton {
                     position: relative;
-                    top: -0.5rem;
+                    width: 6rem;
+                    height: 2rem;
+                    background-color: rgb(27, 173, 173);
+                    color: white;
+                    border-radius: 10%;
+                    border: 1px solid teal;
                 }
 
-                .button {
+                .removeButton {
                     position: relative;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
+                    width: 6rem;
+                    height: 2rem;
+                    left: -0.2rem;
+                    background-color: lightgray;
+                    color: black;
+                    border-radius: 10%;
+                    border: 1px solid gray;
+                }
+            }
+        }
+    }
+}
+
+.suggestedContainer {
+    display: flex;
+    position: relative;
+    top: 5rem;
+    gap: 15rem;
+
+    .menuList {
+        display: flex;
+        flex-direction: column;
+        gap: 0.1rem;
+        list-style-type: none;
+        font-size: 130%;
+
+        .menuItem {
+            display: flex;
+            gap: 0.5rem;
+
+            p {
+                position: relative;
+                left: 0.5rem;
+
+                span {
+                    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+                    text-shadow: 0 0 5px lightpink;
+                }
+            }
+
+            a {
+                padding: 10px 0 10px 10px;
+                display: flex;
+                align-items: center;
+                text-decoration: none;
+                color: inherit;
+
+                &:global.active {
+                    color: purple;
+                }
+            }
+        }
+    }
+
+    .suggestedFriendsList {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid whitesmoke;
+        position: relative;
+        overflow: auto;
+        display: flex;
+        width: 70rem;
+        height: 50rem;
+        gap: 1rem;
+        padding: 0.2rem;
+        top: 3rem;
+
+        .suggestedFriend {
+            padding: 0.2rem;
+            position: relative;
+            width: 10rem;
+
+            .suggestedFriendName {
+                position: relative;
+                left: 0.5rem;
+            }
+
+            .button {
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                top: -1.7rem;
+                gap: 0.2rem;
+
+                .addFriendButton {
                     position: relative;
-                    top: -1.7rem;
-                    gap: 0.2rem;
+                    width: 6rem;
+                    height: 2rem;
+                    background-color: rgb(27, 173, 173);
+                    color: white;
+                    border-radius: 10%;
+                    border: 1px solid teal;
+                }
 
-                    .addFriendButton {
-                        position: relative;
-                        width: 6rem;
-                        height: 2rem;
-                        background-color: rgb(27, 173, 173);
-                        color: white;
-                        border-radius: 10%;
-                        border: 1px solid teal;
-                    }
-
-                    .removeButton {
-                        position: relative;
-                        width: 6rem;
-                        height: 2rem;
-                        left: -0.2rem;
-                        background-color: lightgray;
-                        color: black;
-                        border-radius: 10%;
-                        border: 1px solid gray;
-                    }
+                .removeButton {
+                    position: relative;
+                    width: 6rem;
+                    height: 2rem;
+                    left: -0.2rem;
+                    background-color: lightgray;
+                    color: black;
+                    border-radius: 10%;
+                    border: 1px solid gray;
                 }
             }
         }

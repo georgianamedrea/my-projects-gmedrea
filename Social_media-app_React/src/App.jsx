@@ -8,7 +8,7 @@ import NotFound from './pages/NotFound';
 import UserProfilePage from './pages/profile/userProfile/UserProfilePage';
 import Layout from './components/Layout';
 import MyProfile from './pages/profile/MyProfile';
-import Friends from './pages/friends/Friends';
+import MyFriends from './pages/friends/MyFriends';
 import FriendRequestsList from './pages/friends/FriendRequestsList';
 import SuggestedFriends from './pages/friends/SuggestedFriends';
 
@@ -22,7 +22,9 @@ function App() {
           <Route path='/auth' element={<AuthPage />}></Route>
           <Route path='/profile/:id' element={<UserProfilePage></UserProfilePage>} />
           <Route path='/my-profile' element={<MyProfile />} />
-          <Route path='/friends' element={<Friends />} />
+          <Route path='/myFriends' element={<MyFriends />} />
+          <Route path='/friendRequests' element={<FriendRequestsList />} />
+          <Route path='/suggestedFriends' element={<SuggestedFriends />} />
           <Route path='*' element={<NotFound />}></Route>
         </Routes>
       </Layout>

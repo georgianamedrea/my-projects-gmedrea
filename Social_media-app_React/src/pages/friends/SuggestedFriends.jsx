@@ -2,6 +2,12 @@ import styles from './Friends.module.scss';
 
 import { useState } from 'react';
 
+import { Link } from "react-router-dom";
+
+import PeopleIcon from '@mui/icons-material/People';
+import Diversity1Icon from '@mui/icons-material/Diversity1';
+import Diversity3Icon from '@mui/icons-material/Diversity3';
+
 import userName1 from '../../assets/images/userName1.jpg';
 import userName2 from '../../assets/images/userName2.jpg';
 import userName3 from '../../assets/images/userName3.jpg';
@@ -17,7 +23,7 @@ import userName12 from '../../assets/images/userName12.jpg';
 
 import SuggestedFriendElement from './SuggestedFriendElement';
 
-    const SuggestedFriends = () => {
+const SuggestedFriends = () => {
 
     const SuggestedFriendRequests = [
         {
@@ -149,9 +155,28 @@ import SuggestedFriendElement from './SuggestedFriendElement';
     }
 
     return (
-        <>
-            <h3 className={styles.titleSuggested}>Suggested friends <span>{suggestedFriends}</span></h3>
-            <div className={styles.suggestedFriendsContainer}>
+        <div className={styles.suggestedContainer}>
+            <ul className={styles.menuList}>
+                <li className={styles.menuItem}>
+                    <Link to="/myFriends">
+                        <PeopleIcon sx={{ width: 40, height: 40 }} />
+                        <p>My Friends  <span className={styles.friendsNumber}> 24</span></p>
+                    </Link>
+                </li>
+                <li className={styles.menuItem}>
+                    <Link to="/friendRequests">
+                        <Diversity1Icon sx={{ width: 40, height: 40 }} />
+                        <p>Friend Requests  <span className={styles.requestsNumber}> 24</span></p>
+                    </Link>
+                </li>
+                <li className={styles.menuItem}>
+                    <Link to="/suggestedFriends">
+                        <Diversity3Icon sx={{ width: 40, height: 40 }} />
+                        <p>Suggested Friends  <span className={styles.suggestedNumber}> {suggestedFriends}</span></p>
+                    </Link>
+                </li>
+            </ul>
+            <div className={styles.suggestedFriendsList}>
                 {SuggestedFriendRequests.map((suggestedFriend) => {
                     return (
                         <SuggestedFriendElement
@@ -163,7 +188,7 @@ import SuggestedFriendElement from './SuggestedFriendElement';
                     )
                 })}
             </div>
-        </>
+        </div>
 
     )
 }

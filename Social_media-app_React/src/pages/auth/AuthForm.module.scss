@@ -1,5 +1,5 @@
 .auth {
-    margin: 10rem auto;
+    margin: 3rem auto;
     width: 95%;
     max-width: 25rem;
     border-radius: 5%;
@@ -9,8 +9,11 @@
     text-align: center;
     color: white;
     background-color: rgb(27, 173, 173);
+    position: relative;
+    top: 10rem;
 
     form {
+
         .control {
             margin-bottom: 0.5rem;
 
@@ -23,7 +26,7 @@
             input {
                 background-color: lightgray;
                 border-radius: 5px;
-                color: rgb(27, 173, 173);
+                color: teal;
                 border: 1px solid teal;
                 width: 100%;
                 text-align: left;

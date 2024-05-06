@@ -1,9 +1,6 @@
 import styles from './Friends.module.scss';
 
-import { useState } from 'react';
 import { Link } from "react-router-dom";
-
-import PropTypes from 'prop-types';
 
 import PeopleIcon from '@mui/icons-material/People';
 import Diversity1Icon from '@mui/icons-material/Diversity1';
@@ -22,164 +19,156 @@ import userName10 from '../../assets/images/userName10.jpg';
 import userName11 from '../../assets/images/userName11.jpg';
 import userName12 from '../../assets/images/userName12.jpg';
 
-import FriendRequestElement from './FriendRequestElement';
+import MyFriendElement from './MyFriendElement.jsx';
+
+import { useState } from 'react';
 
 
-const FriendRequestsList = () => {
+const MyFriends = () => {
 
-    const FriendRequests = [
+    const MyFriendsList = [
         {
             imageUrl: userName1,
-            name: 'Username 30',
-            id: 30
+            name: 'Username 1',
+            id: 0
         },
         {
             imageUrl: userName2,
-            name: 'Username 31',
-            id: 31
+            name: 'Username 2',
+            id: 1
         },
         {
             imageUrl: userName3,
-            name: 'Username 32',
-            id: 32
+            name: 'Username 3',
+            id: 2
         },
         {
             imageUrl: userName4,
-            name: 'Username 33',
-            id: 33
+            name: 'Username 4',
+            id: 3
         },
         {
             imageUrl: userName5,
-            name: 'Username 34',
-            id: 34
+            name: 'Username 5',
+            id: 4
         },
         {
             imageUrl: userName6,
-            name: 'Username 35',
-            id: 35
+            name: 'Username 6',
+            id: 5
         },
         {
             imageUrl: userName7,
-            name: 'Username 36',
-            id: 36
+            name: 'Username 7',
+            id: 6
         },
         {
             imageUrl: userName8,
-            name: 'Username 37',
-            id: 37
+            name: 'Username 8',
+            id: 7
         },
         {
             imageUrl: userName9,
-            name: 'Username 38',
-            id: 38
+            name: 'Username 9',
+            id: 8
         },
         {
             imageUrl: userName10,
-            name: 'Username 39',
-            id: 39
+            name: 'Username 10',
+            id: 9
         },
         {
             imageUrl: userName11,
-            name: 'Username 40',
-            id: 40
+            name: 'Username 11',
+            id: 10
         },
         {
             imageUrl: userName12,
-            name: 'Username 41',
-            id: 41
+            name: 'Username 12',
+            id: 11
         },
         {
             imageUrl: userName1,
-            name: 'Username 42',
-            id: 42
+            name: 'Username 13',
+            id: 12
         },
         {
             imageUrl: userName2,
-            name: 'Username 43',
-            id: 43
+            name: 'Username 14',
+            id: 13
         },
         {
             imageUrl: userName3,
-            name: 'Username 44',
-            id: 44
+            name: 'Username 15',
+            id: 14
         },
         {
             imageUrl: userName4,
-            name: 'Username 45',
-            id: 45
+            name: 'Username 16',
+            id: 15
         },
         {
             imageUrl: userName5,
-            name: 'Username 46',
-            id: 46
+            name: 'Username 17',
+            id: 16
         },
         {
             imageUrl: userName6,
-            name: 'Username 47',
-            id: 47
+            name: 'Username 18',
+            id: 17
         },
         {
             imageUrl: userName7,
-            name: 'Username 48',
-            id: 48
+            name: 'Username 19',
+            id: 18
         },
         {
             imageUrl: userName8,
-            name: 'Username 49',
-            id: 49
+            name: 'Username 20',
+            id: 19
         },
         {
             imageUrl: userName9,
-            name: 'Username 50',
-            id: 50
+            name: 'Username 21',
+            id: 20
         },
         {
             imageUrl: userName10,
-            name: 'Username 51',
-            id: 51
+            name: 'Username 22',
+            id: 21
         },
         {
             imageUrl: userName11,
-            name: 'Username 52',
-            id: 52
+            name: 'Username 23',
+            id: 22
         },
         {
             imageUrl: userName12,
-            name: 'Username 53',
-            id: 53
+            name: 'Username 24',
+            id: 23
         }
     ]
 
-    const [friendsNumber, setFriendsNumber] = useState(24)
+    const [myFriendsNumber, setMyFriendsNumber] = useState(24)
 
-    const addFriend = () => {
-        setFriendsNumber(friendsNumber + 1)
+    const unfriendFriend = () => {
+        setMyFriendsNumber(myFriendsNumber - 1)
     }
 
-    const [friendRequests, setFriendRequests] = useState(24)
-
-    const removeRequest = () => {
-        setFriendRequests(friendRequests - 1)
-    }
-
-    const updateFriends = () => {
-        addFriend();
-        removeRequest()
-    }
 
     return (
-        <div className={styles.requestsContainer}>
-             <ul className={styles.menuList}>
+        <div className={styles.myFriendsCotainer}>
+            <ul className={styles.menuList}>
                 <li className={styles.menuItem}>
                     <Link to="/myFriends">
                         <PeopleIcon sx={{ width: 40, height: 40 }} />
-                        <p>My Friends  <span className={styles.friendsNumber}> {friendsNumber}</span></p>
+                        <p>My Friends  <span className={styles.friendsNumber}> {myFriendsNumber}</span></p>
                     </Link>
                 </li>
                 <li className={styles.menuItem}>
                     <Link to="/friendRequests">
                         <Diversity1Icon sx={{ width: 40, height: 40 }} />
-                        <p>Friend Requests  <span className={styles.requestsNumber}> {friendRequests}</span></p>
+                        <p>Friend Requests  <span className={styles.requestsNumber}> 24</span></p>
                     </Link>
                 </li>
                 <li className={styles.menuItem}>
@@ -189,22 +178,21 @@ const FriendRequestsList = () => {
                     </Link>
                 </li>
             </ul>
-            <div className={styles.friendRequestsList}>
-                {FriendRequests.map((friendRequest) => {
+            <div className={styles.myFriendsList}>
+                {MyFriendsList.map((myFriend) => {
                     return (
-                        <FriendRequestElement
-                            imageUrl={friendRequest.imageUrl}
-                            name={friendRequest.name}
-                            key={friendRequest.id}
-                            onButtonClick={updateFriends}
-                            onRemoveClick={removeRequest}
+                        <MyFriendElement
+                            imageUrl={myFriend.imageUrl}
+                            name={myFriend.name}
+                            key={myFriend.id}
+                            onButtonClick={unfriendFriend}
                         />
                     )
                 })}
             </div>
-        </div>
 
+        </div>
     )
 }
 
-export default FriendRequestsList;
+export default MyFriends;
