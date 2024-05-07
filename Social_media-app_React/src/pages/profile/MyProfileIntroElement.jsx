@@ -1,5 +1,3 @@
-import styles from "./MyProfile.module.scss";
-
 import * as React from 'react';
 import { styled } from '@mui/material/styles';
 import IconButton from '@mui/material/IconButton';

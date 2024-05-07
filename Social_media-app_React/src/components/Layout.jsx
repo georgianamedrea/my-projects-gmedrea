@@ -1,6 +1,9 @@
+import styles from './Layout.module.scss';
+
 import PropTypes from 'prop-types';
+
 import Navigation from './Navigation';
-import styles from './Layout.module.scss'
+
 
 const Layout = ({ children }) => {
     return (

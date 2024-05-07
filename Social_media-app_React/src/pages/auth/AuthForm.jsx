@@ -1,5 +1,6 @@
-import { useState } from 'react'
-import styles from './AuthForm.module.scss'
+import styles from './AuthForm.module.scss';
+
+import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const AuthForm = () => {

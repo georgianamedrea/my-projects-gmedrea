@@ -1,6 +1,7 @@
-import { Link, NavLink, useNavigate } from "react-router-dom";
-import styles from './Navigation.module.scss'
+import styles from './Navigation.module.scss';
+
 import { useState } from "react";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 
 const Navigation = () => {
     const [isLoggedIn, setIsLoggedIn] = useState(true);

@@ -1,7 +1,6 @@
 import styles from "./MyProfile.module.scss";
 
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
 
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
 import ThumbUpIcon from '@mui/icons-material/ThumbUp';
@@ -16,6 +15,7 @@ import MyProfileCommentSection from './MyProfileCommentSection';
 import DropDownList from './MyProfileDropDownList';
 
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 
 const MyProfilePostSection = ({ postData }) => {
@@ -93,7 +93,7 @@ const MyProfilePostSection = ({ postData }) => {
                 </section>
 
                 <section className={styles.reactsActions}>
-                    <div className={`${styles.reaction} ${isLiked && styles.blue}`} onClick={handleLike}>
+                    <div className={`${styles.reaction} ${isLiked && styles.purple}`} onClick={handleLike}>
                         <ThumbUpIcon />
                         <span>Like</span>
                     </div>
@@ -103,7 +103,7 @@ const MyProfilePostSection = ({ postData }) => {
                         <span>Comment</span>
                     </div>
 
-                    <div className={`${styles.reaction} ${isShared && styles.blue}`} onClick={handleShare}>
+                    <div className={`${styles.reaction} ${isShared && styles.purple}`} onClick={handleShare}>
                         <ReplyIcon />
                         <span>Share</span>
                     </div>

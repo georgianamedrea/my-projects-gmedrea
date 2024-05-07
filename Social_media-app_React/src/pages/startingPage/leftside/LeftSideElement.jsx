@@ -11,7 +11,7 @@ import PropTypes from 'prop-types';
 
 const LeftSideElement = ({ icon, name }) => {
     return (
-        <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background-paper' }} className={styles.leftNav}>
+        <List sx={{ width: '100%', maxWidth: 360 }} className={styles.leftNav}>
             <ListItem>
                 <ListItemAvatar>
                     <Avatar sx={{ bgcolor: 'rgb(27, 173, 173)', width: 50, height: 50 }}>

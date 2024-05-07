@@ -3,7 +3,7 @@
 }
 
 .rightContainer {
-    top: 5rem;
+    top: 5.3rem;
     right: 0;
     width: 20rem;
     height: 90vh;
@@ -12,6 +12,8 @@
     overflow: auto;
     display: flex;
     flex-direction: column;
+    background-color: whitesmoke;
+    border-radius: 1%;
 
     .onlineUserName {
         margin-left: 1rem;

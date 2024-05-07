@@ -16,7 +16,7 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 import WcIcon from '@mui/icons-material/Wc';
 import CakeIcon from '@mui/icons-material/Cake';
 
-import coverUser from '../../../assets/images/coverUser.jpg'
+import coverUser from '../../../assets/images/coverUser.jpg';
 import pageName1 from '../../../assets/images/pageName1.jpeg';
 import pageName2 from '../../../assets/images/pageName2.jpeg';
 import pageName3 from '../../../assets/images/pageName3.jpeg';

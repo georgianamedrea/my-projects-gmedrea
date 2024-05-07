@@ -1,7 +1,5 @@
 import styles from './CommentsSection.module.scss';
 
-import { Link } from 'react-router-dom';
-
 import profileImg from '../../../../assets/icons/profile.jpg';
 import userName1 from '../../../../assets/images/userName1.jpg';
 import userName2 from '../../../../assets/images/userName2.jpg';
@@ -15,6 +13,7 @@ import userName9 from '../../../../assets/images/userName9.jpg';
 import userName10 from '../../../../assets/images/userName10.jpg';
 
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 
 const USER_DATA = [

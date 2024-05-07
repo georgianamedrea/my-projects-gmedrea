@@ -17,9 +17,11 @@
         height: 90vh;
         border: 3px solid whitesmoke;
         position: relative;
-        top: 1.8rem;
+        top: -1rem;
         left: 1rem;
         padding: 1rem;
+        background-color: whitesmoke;
+        border-radius: 1%;
 
         .menuItem {
             display: flex;
@@ -62,7 +64,9 @@
         height: 90vh;
         gap: 1rem;
         padding: 0.2rem;
-        top: 3rem;
+        top: 0.3rem;
+        background-color: whitesmoke;
+        border-radius: 1%;
 
         .myFriends {
             padding: 0.2rem;
@@ -105,9 +109,11 @@
         height: 90vh;
         border: 3px solid whitesmoke;
         position: relative;
-        top: 1.8rem;
+        top: -1rem;
         left: 1rem;
         padding: 1rem;
+        background-color: whitesmoke;
+        border-radius: 1%;
 
         .menuItem {
             display: flex;
@@ -150,7 +156,9 @@
         height: 90vh;
         gap: 1rem;
         padding: 0.2rem;
-        top: 3rem;
+        top: 0.3rem;
+        background-color: whitesmoke;
+        border-radius: 1%;
 
         .friendRequest {
             padding: 0.2rem;
@@ -212,9 +220,11 @@
         height: 90vh;
         border: 3px solid whitesmoke;
         position: relative;
-        top: 1.8rem;
+        top: -1rem;
         left: 1rem;
         padding: 1rem;
+        background-color: whitesmoke;
+        border-radius: 1%;
 
         .menuItem {
             display: flex;
@@ -257,7 +267,9 @@
         height: 90vh;
         gap: 1rem;
         padding: 0.2rem;
-        top: 3rem;
+        top: 0.3rem;
+        background-color: whitesmoke;
+        border-radius: 1%;
 
         .suggestedFriend {
             padding: 0.2rem;

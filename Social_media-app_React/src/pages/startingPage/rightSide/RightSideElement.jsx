@@ -43,7 +43,7 @@ const RightSideElement = ({ imageUrl, name }) => {
     }));
 
     return (
-        <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }} className={styles.rightNav}>
+        <List sx={{ width: '100%', maxWidth: 360 }} className={styles.rightNav}>
             <ListItem>
                 <ListItemAvatar>
                     <StyledBadge

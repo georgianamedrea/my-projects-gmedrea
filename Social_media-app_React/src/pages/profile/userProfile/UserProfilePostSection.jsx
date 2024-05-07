@@ -3,7 +3,6 @@ import styles from "./UserProfile.module.scss";
 import PropTypes from 'prop-types';
 
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
-import InfoIcon from '@mui/icons-material/Info';
 import ThumbUpIcon from '@mui/icons-material/ThumbUp';
 import ReplyIcon from '@mui/icons-material/Reply';
 import CommentIcon from '@mui/icons-material/Comment';
@@ -90,7 +89,7 @@ const UserProfilePostSection = ({ postData, name, photo }) => {
                 </section>
 
                 <section className={styles.userReactsActions}>
-                    <div className={`${styles.userReaction} ${isLiked && styles.blue}`} onClick={handleLike}>
+                    <div className={`${styles.userReaction} ${isLiked && styles.purple}`} onClick={handleLike}>
                         <ThumbUpIcon />
                         <span>Like</span>
                     </div>
@@ -100,7 +99,7 @@ const UserProfilePostSection = ({ postData, name, photo }) => {
                         <span>Comment</span>
                     </div>
 
-                    <div className={`${styles.userReaction} ${isShared && styles.blue}`} onClick={handleShare}>
+                    <div className={`${styles.userReaction} ${isShared && styles.purple}`} onClick={handleShare}>
                         <ReplyIcon />
                         <span>Share</span>
                     </div>

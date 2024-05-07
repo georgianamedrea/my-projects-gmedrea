@@ -1,10 +1,8 @@
 import styles from './Newsfeed.module.scss';
 
-import { Link } from 'react-router-dom'
 import PropTypes from 'prop-types';
 
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
-import InfoIcon from '@mui/icons-material/Info';
 import ThumbUpIcon from '@mui/icons-material/ThumbUp';
 import ReplyIcon from '@mui/icons-material/Reply';
 import CommentIcon from '@mui/icons-material/Comment';
@@ -28,6 +26,7 @@ import CommentsSection from './comments/CommentsSection';
 import DropDownList from './NewsfeedDropDownList';
 
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Newsfeed = ({ postData }) => {
     const [isLiked, setIsLiked] = useState(false);
@@ -118,7 +117,7 @@ const Newsfeed = ({ postData }) => {
                 </section>
 
                 <section className={styles.reactsActions}>
-                    <div className={`${styles.reaction} ${isLiked && styles.blue}`} onClick={handleLike}>
+                    <div className={`${styles.reaction} ${isLiked && styles.purple}`} onClick={handleLike}>
                         <ThumbUpIcon />
                         <span>Like</span>
                     </div>
@@ -128,7 +127,7 @@ const Newsfeed = ({ postData }) => {
                         <span>Comment</span>
                     </div>
 
-                    <div className={`${styles.reaction} ${isShared && styles.blue}`} onClick={handleShare}>
+                    <div className={`${styles.reaction} ${isShared && styles.purple}`} onClick={handleShare}>
                         <ReplyIcon />
                         <span>Share</span>
                     </div>
