@@ -88,7 +88,7 @@ const Newsfeed = ({ postData }) => {
                         <img src={postProfileImage[postData.id]} alt="Profile Picture"
                             className={styles.profilePictureImg} />
                     </Link>
-                    <Link to={`/profile/${postData.id}`}>Username {postData.id}</Link>
+                    <Link to={`/profile/${postData.id}`} className={styles.username}>Username {postData.id}</Link>
 
                     <div className={styles.contextMenu}>
                         <MoreHorizIcon onClick={() => setOpenDropDown((openDropDown) => !openDropDown)} />
@@ -100,9 +100,6 @@ const Newsfeed = ({ postData }) => {
                     <p>{postData.title}</p>
                     <div className={styles.imageWrapper}>
                         <img src={postImages[postData.id % 2]} alt="post content" className={styles.mainPostImage} />
-                        <div className={styles.infoIcon}>
-                            <InfoIcon fontSize='large' color='info' />
-                        </div>
                     </div>
 
                     <p>{postData.body}</p>

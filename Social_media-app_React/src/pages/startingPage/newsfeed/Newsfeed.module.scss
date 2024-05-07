@@ -3,7 +3,7 @@
 }
 
 .mainPost {
-    width: 40rem;
+    width: 45rem;
     border: 1px solid whitesmoke;
     background-color: whitesmoke;
     margin: 1rem 0;
@@ -14,7 +14,6 @@
     .userInfo {
         display: flex;
         margin: 0 1rem;
-        justify-content: space-between;
         align-items: center;
 
         a {
@@ -32,6 +31,14 @@
             border-radius: 50%;
             object-fit: cover;
             margin-right: 0.3rem;
+            position: relative;
+            top: 0.2rem;
+        }
+
+        .username {
+            position: relative;
+            left: 0.5rem;
+            font-size: 105%;
         }
 
         .contextMenu {
@@ -40,6 +47,8 @@
             justify-content: center;
             align-items: center;
             cursor: pointer;
+            position: relative;
+            left: 33rem;
 
             &:hover {
                 border: 1px solid teal;
@@ -86,17 +95,11 @@
 
         .imageWrapper {
             position: relative;
+            padding: 1rem;
 
             .mainPostImage {
                 max-width: 100%;
-            }
-
-            .infoIcon {
-                cursor: pointer;
-                position: absolute;
-                right: 3rem;
-                color: teal;
-                bottom: -1rem;
+                border-radius: 2%;
             }
         }
     }
@@ -104,7 +107,7 @@
     .reacts {
         display: flex;
         justify-content: space-between;
-        margin: 0.5rem;
+        padding: 0 1rem;
     }
 
     .reactsActions {
@@ -115,7 +118,6 @@
         .reaction {
             display: flex;
             cursor: pointer;
-            padding: 0.2rem;
             border-radius: 5px;
             align-items: center;
 
@@ -124,10 +126,8 @@
             }
 
             &.blue {
-                color: blue;
+                color: purple;
             }
-
-            ;
         }
     }
 }

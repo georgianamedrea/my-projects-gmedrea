@@ -5,7 +5,6 @@
 .myFriendsCotainer {
     display: flex;
     position: relative;
-    top: 5rem;
     gap: 15rem;
 
     .menuList {
@@ -14,6 +13,13 @@
         gap: 0.1rem;
         list-style-type: none;
         font-size: 130%;
+        width: 20rem;
+        height: 90vh;
+        border: 3px solid whitesmoke;
+        position: relative;
+        top: 1.8rem;
+        left: 1rem;
+        padding: 1rem;
 
         .menuItem {
             display: flex;
@@ -36,7 +42,7 @@
                 text-decoration: none;
                 color: inherit;
 
-                &:global.active {
+                &:focus {
                     color: purple;
                 }
             }
@@ -48,12 +54,12 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        border: 2px solid whitesmoke;
+        border: 3px solid whitesmoke;
         position: relative;
         overflow: auto;
         display: flex;
         width: 70rem;
-        height: 50rem;
+        height: 90vh;
         gap: 1rem;
         padding: 0.2rem;
         top: 3rem;
@@ -87,7 +93,6 @@
 .requestsContainer {
     display: flex;
     position: relative;
-    top: 5rem;
     gap: 15rem;
 
     .menuList {
@@ -96,6 +101,13 @@
         gap: 0.1rem;
         list-style-type: none;
         font-size: 130%;
+        width: 20rem;
+        height: 90vh;
+        border: 3px solid whitesmoke;
+        position: relative;
+        top: 1.8rem;
+        left: 1rem;
+        padding: 1rem;
 
         .menuItem {
             display: flex;
@@ -118,7 +130,7 @@
                 text-decoration: none;
                 color: inherit;
 
-                &:global.active {
+                &:focus {
                     color: purple;
                 }
             }
@@ -135,7 +147,7 @@
         overflow: auto;
         display: flex;
         width: 70rem;
-        height: 50rem;
+        height: 90vh;
         gap: 1rem;
         padding: 0.2rem;
         top: 3rem;
@@ -188,7 +200,6 @@
 .suggestedContainer {
     display: flex;
     position: relative;
-    top: 5rem;
     gap: 15rem;
 
     .menuList {
@@ -197,6 +208,13 @@
         gap: 0.1rem;
         list-style-type: none;
         font-size: 130%;
+        width: 20rem;
+        height: 90vh;
+        border: 3px solid whitesmoke;
+        position: relative;
+        top: 1.8rem;
+        left: 1rem;
+        padding: 1rem;
 
         .menuItem {
             display: flex;
@@ -219,7 +237,7 @@
                 text-decoration: none;
                 color: inherit;
 
-                &:global.active {
+                &:focus {
                     color: purple;
                 }
             }
@@ -236,7 +254,7 @@
         overflow: auto;
         display: flex;
         width: 70rem;
-        height: 50rem;
+        height: 90vh;
         gap: 1rem;
         padding: 0.2rem;
         top: 3rem;

@@ -298,7 +298,7 @@ const MyProfile = () => {
                     </div>
                     <div className={styles.myFriends}>
                         <ListItemText primary="Friends" className={styles.myProfileFriendsTitle} />
-                        <ImageList sx={{ width:500, height:500 }} cols={3}>
+                        <ImageList sx={{ width:500, height:500, overflowX: 'hidden' }} cols={3}>
                             {friendsData.map((friend) => (
                                 <ImageListItem key={friend.id}>
                                     <img

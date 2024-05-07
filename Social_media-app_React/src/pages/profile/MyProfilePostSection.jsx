@@ -4,7 +4,6 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
-import InfoIcon from '@mui/icons-material/Info';
 import ThumbUpIcon from '@mui/icons-material/ThumbUp';
 import ReplyIcon from '@mui/icons-material/Reply';
 import CommentIcon from '@mui/icons-material/Comment';
@@ -64,7 +63,7 @@ const MyProfilePostSection = ({ postData }) => {
                         <img src={profile} alt="Profile Picture"
                             className={styles.myProfilePictureImg} />
                     </Link>
-                    <Link to='/me' className={styles.myProfileName}>Georgiana Medrea</Link>
+                    <Link to='/me' className={styles.myProfileName} >Georgiana Medrea</Link>
 
                     <div className={styles.contextMenu}>
                         <MoreHorizIcon onClick={() => setOpenDropDown((openDropDown) => !openDropDown)} />
@@ -76,9 +75,6 @@ const MyProfilePostSection = ({ postData }) => {
                     <p>{postData.title}</p>
                     <div className={styles.imageWrapper}>
                         <img src={postImages[postData.id % 2]} alt="post content" className={styles.mainPostImage} />
-                        <div className={styles.infoIcon}>
-                            <InfoIcon fontSize='large' color='info' />
-                        </div>
                     </div>
 
                     <p>{postData.body}</p>

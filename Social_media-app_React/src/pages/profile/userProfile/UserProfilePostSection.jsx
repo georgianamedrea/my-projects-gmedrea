@@ -72,9 +72,6 @@ const UserProfilePostSection = ({ postData, name, photo }) => {
                     <p>{postData.title}</p>
                     <div className={styles.userImageWrapper}>
                         <img src={postImages[postData.id % 2]} alt="post content" className={styles.userMainPostImage} />
-                        <div className={styles.userInfoIcon}>
-                            <InfoIcon fontSize='large' color='info' />
-                        </div>
                     </div>
 
                     <p>{postData.body}</p>

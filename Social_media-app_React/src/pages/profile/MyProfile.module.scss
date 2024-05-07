@@ -75,7 +75,7 @@
             .myPhotos {
                 border: 1px solid whitesmoke;
                 width: 32rem;
-                height: 35rem;
+                height: 37rem;
                 border: 5px solid whitesmoke;
                 background-color: whitesmoke;
                 border-radius: 10px;
@@ -84,7 +84,7 @@
             .myFriends {
                 border: 1px solid whitesmoke;
                 width: 32rem;
-                height: 35rem;
+                height: 37rem;
                 border: 5px solid whitesmoke;
                 background-color: whitesmoke;
                 border-radius: 10px;
@@ -125,7 +125,6 @@
                 .userInfo {
                     display: flex;
                     margin: 0 1rem;
-                    justify-content: space-between;
                     align-items: center;
 
                     a {
@@ -143,6 +142,14 @@
                         border-radius: 50%;
                         object-fit: cover;
                         margin-right: 0.3rem;
+                        position: relative;
+                        top: 0.2rem;
+                    }
+
+                    .myProfileName {
+                        position: relative;
+                        left: 0.5rem;
+                        font-size: 105%;
                     }
 
                     .contextMenu {
@@ -152,8 +159,7 @@
                         align-items: center;
                         cursor: pointer;
                         position: relative;
-                        right: 0;
-                        flex-direction: column;
+                        left: 25rem;
 
                         &:hover {
                             border: 1px solid teal;
@@ -200,17 +206,11 @@
 
                     .imageWrapper {
                         position: relative;
+                        padding: 1rem;
 
                         .mainPostImage {
                             max-width: 100%;
-                        }
-
-                        .infoIcon {
-                            cursor: pointer;
-                            position: absolute;
-                            right: 3rem;
-                            color: teal;
-                            bottom: -1rem;
+                            border-radius: 2%;
                         }
                     }
                 }
@@ -218,7 +218,7 @@
                 .reacts {
                     display: flex;
                     justify-content: space-between;
-                    margin: 0.5rem;
+                    padding: 0 1rem;
                 }
 
                 .reactsActions {
@@ -229,7 +229,6 @@
                     .reaction {
                         display: flex;
                         cursor: pointer;
-                        padding: 0.2rem;
                         border-radius: 5px;
                         align-items: center;
 
@@ -238,10 +237,8 @@
                         }
 
                         &.blue {
-                            color: blue;
+                            color: purple;
                         }
-
-                        ;
                     }
                 }
 
@@ -265,6 +262,13 @@
                                 border-radius: 3px;
                             }
                         }
+
+                        button {
+                            background-color: rgb(27, 173, 173);
+                            border: 1px solid teal;
+                            border-radius: 5%;
+                            color: white;
+                        }
                     }
 
                     .profilePictureImg {
@@ -286,7 +290,7 @@
 
                 .postComments {
                     margin: 1rem 1rem;
-                    height: 19rem;
+                    height: 18rem;
                     overflow: auto;
 
                     .comments {
@@ -300,6 +304,8 @@
                             justify-content: start;
                             margin-left: 0.5rem;
                             align-items: start;
+                            position: relative;
+                            top: 0.5rem;
 
                             .profilePictureImg {
                                 width: 40px;
@@ -326,6 +332,7 @@
                             padding: 0.2rem 1rem;
                             margin-left: 3rem;
                             padding-bottom: 1rem;
+                            height: 2rem;
 
                             .timeOfPost {
                                 font-size: 0.75rem;
@@ -384,6 +391,6 @@
 
 @media only screen and (max-width: 500px) {
     .myProfileSections {
-        left:7rem;
+        left: 7rem;
     }
 }

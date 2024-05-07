@@ -332,7 +332,7 @@ const UserProfilePage = () => {
                     </div>
                     <div className={styles.userFriends}>
                         <ListItemText primary="Friends" className={styles.userProfileFriendsTitle} />
-                        <ImageList sx={{ width:500, height:500 }} cols={3} >
+                        <ImageList sx={{ width:500, height:500, overflowX: 'hidden' }} cols={3} >
                             {FriendsData.map((friend) => (
                                 <ImageListItem key={friend.id}>
                                     <img

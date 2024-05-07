@@ -22,6 +22,13 @@
                 border-radius: 3px;
             }
         }
+
+        button {
+            background-color: rgb(27, 173, 173);
+            border: 1px solid teal;
+            border-radius: 5%;
+            color: white;
+        }
     }
 
     .profilePictureImg {
@@ -43,7 +50,7 @@
 
 .postComments {
     margin: 1rem 1rem;
-    height: 19rem;
+    height: 18rem;
     overflow: auto;
 
     .comments {
@@ -57,6 +64,8 @@
             justify-content: start;
             margin-left: 0.5rem;
             align-items: start;
+            position: relative;
+            top: 0.5rem;
 
             .profilePictureImg {
                 width: 40px;
@@ -83,6 +92,7 @@
             padding: 0.2rem 1rem;
             margin-left: 3rem;
             padding-bottom: 1rem;
+            height: 2rem;
 
             .timeOfPost {
                 font-size: 0.75rem;
