@@ -100,3 +100,37 @@
         }
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .commentsInputContainer {
+        width: 90%;
+
+        .commentInputSection {
+            position: relative;
+            left: -1.5rem;
+
+            form {
+                gap: 0.1rem;
+
+                button {
+                    width: 4.3rem;
+                }
+            }
+
+            .profilePictureImg {
+                position: relative;
+                left: 2.3rem;
+            }
+        }
+
+
+
+        .postComments {
+            width: 80%;
+            
+            .commentInfo {
+                height: 2.5rem;
+            }
+        }
+    }
+}

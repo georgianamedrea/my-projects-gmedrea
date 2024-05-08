@@ -217,32 +217,32 @@ const MyProfile = () => {
     const IntroDataList = [
         {
             icon: <WomanIcon />,
-            text: "Gender: Female",
+            text: "Gender: xxxxxx",
             id: 0
         },
         {
             icon: <CakeIcon />,
-            text: "Birthdate: 10 November 1983",
+            text: "Birthdate: xx xxxxxxxx xxxx",
             id: 1
         },
         {
             icon: <FavoriteIcon />,
-            text: "In a relationship",
+            text: "Relationship status: xxxxxxx",
             id: 2
         },
         {
             icon: <HomeIcon />,
-            text: "Lives in Timisoara, Romania",
+            text: "Lives in: xxxxxxxxx",
             id: 3
         },
         {
             icon: <WorkIcon />,
-            text: "Works as Financial Controller",
+            text: "Works as: xxx xxxxxxxxx",
             id: 4
         },
         {
             icon: <SchoolIcon />,
-            text: "Studied at West University",
+            text: "Studied at: xxxx xxxxxxxxx",
             id: 5
         }
     ]

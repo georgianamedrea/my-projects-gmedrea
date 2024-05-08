@@ -126,6 +126,7 @@
                     display: flex;
                     margin: 0 1rem;
                     align-items: center;
+                    justify-content: space-between;
 
                     a {
                         text-decoration: none;
@@ -159,7 +160,6 @@
                         align-items: center;
                         cursor: pointer;
                         position: relative;
-                        left: 25rem;
 
                         &:hover {
                             border: 1px solid teal;

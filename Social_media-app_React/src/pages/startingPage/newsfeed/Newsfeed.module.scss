@@ -15,6 +15,7 @@
         display: flex;
         margin: 0 1rem;
         align-items: center;
+        justify-content: space-between;
 
         a {
             text-decoration: none;
@@ -48,7 +49,6 @@
             align-items: center;
             cursor: pointer;
             position: relative;
-            left: 33rem;
 
             &:hover {
                 border: 1px solid teal;
@@ -132,14 +132,36 @@
     }
 }
 
-@media only screen and (max-width: 1300px) {
+@media only screen and (max-width: 1350px) {
     .mainPost {
-        width: 70%;
+        width: 65%;
     }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
     .mainPost {
         width: 100%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .mainPost {
+        align-self: center;
+        .userInfo {
+            width: 90%;
+        }
+        
+        .content {
+            width: 90%;
+        }
+
+        .reacts {
+            width: 90%;
+        }
+
+        .reactsActions {
+            width: 90%;
+        }
+
     }
 }

@@ -237,17 +237,17 @@ const UserProfilePage = () => {
         },
         {
             icon: <HomeIcon />,
-            text: "Lives in xxxxxxx, xxxxx",
+            text: "Lives in: xxxxxxx",
             id: 3
         },
         {
             icon: <WorkIcon />,
-            text: "Works at  xxxxxxx xxxxxxxxxxx",
+            text: "Works as:  xxxx xxxxxxxxx",
             id: 4
         },
         {
             icon: <SchoolIcon />,
-            text: "Studied at xxxxxxxxxxxxxx",
+            text: "Studied at: xxxx xxxxxxxx",
             id: 5
         }
     ]
