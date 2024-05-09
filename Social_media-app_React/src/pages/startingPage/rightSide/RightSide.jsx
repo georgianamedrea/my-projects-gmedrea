@@ -4,7 +4,7 @@ import userName1 from '../../../assets/images/userName1.jpg';
 import userName2 from '../../../assets/images/userName2.jpg';
 import userName3 from '../../../assets/images/userName3.jpg';
 import userName4 from '../../../assets/images/userName4.jpeg';
-import userName5 from '../../../assets/images/userName5.jpeg';
+import userName5 from '../../../assets/images/userName5.jpg';
 import userName6 from '../../../assets/images/userName6.jpg';
 import userName7 from '../../../assets/images/userName7.jpg';
 import userName8 from '../../../assets/images/userName8.jpg';
@@ -13,7 +13,10 @@ import userName10 from '../../../assets/images/userName10.jpg';
 import userName11 from '../../../assets/images/userName11.jpg';
 import userName12 from '../../../assets/images/userName12.jpg';
 
+import ChatBubbleIcon from '@mui/icons-material/ChatBubble';
+
 import RightSideElement from './RightSideElement';
+import ChatBox from '../newsfeed/chatbox/Chatbox';
 
 import { useEffect, useState } from 'react';
 
@@ -172,6 +175,8 @@ const RightSide = () => {
         };
     }, []);
 
+    const [isChatOpen, setChatOpen] = useState(false);
+
     return (
         <div className={styles.rightContainer}>
             {FriendsElements.map((friendElement) => {
@@ -185,6 +190,8 @@ const RightSide = () => {
                     )
                 }
             })}
+            < ChatBubbleIcon onClick={() => setChatOpen(!isChatOpen)} />
+            {isChatOpen && <ChatBox className={styles.chatBox} />}
         </div>
     )
 }

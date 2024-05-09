@@ -44,7 +44,7 @@ const RightSideElement = ({ imageUrl, name }) => {
 
     return (
         <List sx={{ width: '100%', maxWidth: 360 }} className={styles.rightNav}>
-            <ListItem>
+            <ListItem >
                 <ListItemAvatar>
                     <StyledBadge
                         overlap="circular"

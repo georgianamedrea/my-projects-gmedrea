@@ -13,7 +13,7 @@ import userName1 from '../../../assets/images/userName1.jpg';
 import userName2 from '../../../assets/images/userName2.jpg';
 import userName3 from '../../../assets/images/userName3.jpg';
 import userName4 from '../../../assets/images/userName4.jpeg';
-import userName5 from '../../../assets/images/userName5.jpeg';
+import userName5 from '../../../assets/images/userName5.jpg';
 import userName6 from '../../../assets/images/userName6.jpg';
 import userName7 from '../../../assets/images/userName7.jpg';
 import userName8 from '../../../assets/images/userName8.jpg';

@@ -11,6 +11,7 @@ import MyProfile from './pages/profile/MyProfile';
 import MyFriends from './pages/friends/MyFriends';
 import FriendRequestsList from './pages/friends/FriendRequestsList';
 import SuggestedFriends from './pages/friends/SuggestedFriends';
+import ChatBox from './pages/startingPage/newsfeed/chatbox/Chatbox';
 
 function App() {
 
@@ -25,6 +26,7 @@ function App() {
           <Route path='/myFriends' element={<MyFriends />} />
           <Route path='/friendRequests' element={<FriendRequestsList />} />
           <Route path='/suggestedFriends' element={<SuggestedFriends />} />
+          <Route path='/chatbox' element={<ChatBox />} />
           <Route path='*' element={<NotFound />}></Route>
         </Routes>
       </Layout>

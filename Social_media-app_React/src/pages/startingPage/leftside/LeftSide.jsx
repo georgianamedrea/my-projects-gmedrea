@@ -82,7 +82,7 @@ const LeftSide = () => {
     ]
 
     return (
-         <div className={styles.leftContainer}>
+        <div className={styles.leftContainer}>
             {IconElements.map((iconElement) => {
                 return (
                     <LeftSideElement
