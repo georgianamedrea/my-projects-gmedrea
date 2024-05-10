@@ -1,0 +1,56 @@
+.chatWindow {
+    bottom: 0.8rem;
+    margin-left: 0.2rem;
+    width: 19rem;
+    height: 20vh;
+    border: 2px solid lightgray;
+    background-color: whitesmoke;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    background-color: whitesmoke;
+    border-radius: 2%;
+    z-index: 1;
+
+    .chatBox {
+        bottom: 2.7rem;
+        width: 16rem;
+        margin-left: 0.8rem;
+        height: 13vh;
+        position: fixed;
+        overflow: auto;
+        display: flex;
+        flex-direction: column;
+        background-color:whitesmoke;
+        border-radius: 2%;
+
+        p {
+            height: 0.1rem;
+            margin-left: 1rem;
+        }
+
+        input {
+            position: fixed;
+            bottom: 1.2rem;
+            margin-left: 0.5rem;
+            border: 1px solid rgb(27, 173, 173);
+        }
+
+        button {
+            position: fixed;
+            bottom: 1.2rem;
+            right: 4.5rem;
+            background-color: rgb(27, 173, 173);
+            color: white;
+            border: 1px solid rgb(27, 173, 173);
+        }
+
+        .chatDropdown {
+            position: fixed;
+            width: 7rem;
+            margin-left: 0.5rem;
+            bottom: 11rem;
+            border: 1px solid rgb(27, 173, 173);
+        }
+    }
+}

@@ -51,7 +51,7 @@ const RightSideElement = ({ imageUrl, name }) => {
                         anchorOrigin={{ vertical: 'bottom', horizontal: 'right' }}
                         variant="dot"
                     >
-                        <Avatar alt={name} src={imageUrl} sx={{ width: 65, height: 65 }} />
+                        <Avatar alt={name} src={imageUrl} sx={{ width: 62, height: 62 }} />
                     </StyledBadge>
                 </ListItemAvatar>
                 <ListItemText primary={name} className={styles.onlineUserName} />

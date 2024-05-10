@@ -2,6 +2,7 @@
     box-sizing: border-box;
 }
 
+
 .rightContainer {
     top: 5.3rem;
     right: 0;
@@ -9,7 +10,6 @@
     height: 90vh;
     border: 5px solid whitesmoke;
     position: fixed;
-    overflow: auto;
     display: flex;
     flex-direction: column;
     background-color: whitesmoke;
@@ -20,14 +20,36 @@
     }
 }
 
+.chatIcon {
+    position: relative;
+    z-index: 2;
+    margin-left: 17rem;
+    bottom: 1rem;
+    color: rgb(27, 173, 173);
+}
+
+
+
+
 @media only screen and (max-width: 1350px) {
     .rightContainer {
         width: 30%;
     }
 }
 
+@media only screen and (max-width: 1000px) {
+    .rightContainer { 
+        height: 90vh;
+
+        .chatIcon {
+            bottom: 3rem;
+            margin-left: 15rem;
+        }
+    }
+}
+
 @media only screen and (max-width: 900px) {
     .rightContainer {
-       display: none;
+        display: none;
     }
 }

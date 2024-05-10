@@ -13,12 +13,13 @@ import userName10 from '../../../assets/images/userName10.jpg';
 import userName11 from '../../../assets/images/userName11.jpg';
 import userName12 from '../../../assets/images/userName12.jpg';
 
-import ChatBubbleIcon from '@mui/icons-material/ChatBubble';
+import MessageIcon from '@mui/icons-material/Message';
 
 import RightSideElement from './RightSideElement';
 import ChatBox from '../newsfeed/chatbox/Chatbox';
 
 import { useEffect, useState } from 'react';
+import { teal } from '@mui/material/colors';
 
 
 const RightSide = () => {
@@ -180,7 +181,7 @@ const RightSide = () => {
     return (
         <div className={styles.rightContainer}>
             {FriendsElements.map((friendElement) => {
-                if (friendElement.id < 12) {
+                if (friendElement.id < 9) {
                     return (
                         <RightSideElement
                             imageUrl={friendElement.imageUrl}
@@ -190,7 +191,7 @@ const RightSide = () => {
                     )
                 }
             })}
-            < ChatBubbleIcon onClick={() => setChatOpen(!isChatOpen)} />
+            < MessageIcon onClick={() => setChatOpen(!isChatOpen)} className={styles.chatIcon} sx={{ color: teal }} />
             {isChatOpen && <ChatBox className={styles.chatBox} />}
         </div>
     )
