@@ -2,10 +2,6 @@
     box-sizing: border-box;
 }
 
-body {
-    background-image: url('/session11-13/assests/loginBackground.webp');
-}
-
 a {
     text-decoration: none;
 }
@@ -15,7 +11,7 @@ a {
     width: 95%;
     max-width: 30rem;
     border-radius: 0.5rem;
-    background-color: teal;
+    background-color: lightblue;
     box-shadow: 0 1px 4px #888;
     padding: 2rem 4rem;
     text-align: center;
@@ -51,7 +47,7 @@ form {
 }
 
 .loginButton {
-    background-color: cadetblue;
+    background-color: rgb(28, 173, 221);
     border: 1px solid white;
     color: white;
     padding: 0.5rem 2.5rem;
@@ -61,7 +57,7 @@ form {
 }
 
 .loginButton:hover {
-    background-color: lightblue;
+    background-color: turquoise;
     border: cadetblue;
     color: #000050;
     font-weight: bold;

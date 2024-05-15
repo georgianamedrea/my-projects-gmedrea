@@ -43,12 +43,6 @@ likeButton.addEventListener('click', function () {
     isLiked = !isLiked
     console.dir(noOfLikesElem)
 
-    // if (isLiked) {
-    //     noOfLikesElem.innerText = Number(noOfLikesElem.innerText) + 1
-    // } else {
-    //     noOfLikesElem.innerText = Number(noOfLikesElem.innerText) - 1
-    // }
-
     noOfLikesElem.innerText = isLiked
         ? noOfLikesElem.innerText = Number(noOfLikesElem.innerText) + 1
         : noOfLikesElem.innerText = Number(noOfLikesElem.innerText) - 1
@@ -76,7 +70,6 @@ commentMessage.innerText = localStorage.getItem('comment') || commentMessage.inn
 
 commentButton.addEventListener('click', function () {
     commentInput.focus()
-    // commentInput.blur()  // reversul functiei focus
 })
 
 function setComment() {
@@ -84,11 +77,6 @@ function setComment() {
     localStorage.setItem('comment', JSON.stringify(commentInput.value))
     commentInput.value = ''
 }
-
-removeCommentButton.addEventListener('click', () => {
-    // localStorage.clear() // sterge tot din local storage
-    localStorage.removeItem('comment') // sterge numai elementul cu cheia respectiva
-})
 
 commentInput.addEventListener('keydown', function (event) {
     if (event.key === 'Enter') {
@@ -110,24 +98,6 @@ commentText.addEventListener('mouseout', function () {
 
 const infoIcon = document.getElementsByClassName('infoIcon')[0]
 const infoMessage = document.getElementsByClassName('infoMessage')[0]
-
-// infoIcon.addEventListener('mouseover', function() {
-//     setTimeout(() => {
-//         infoMessage.style.display = 'block'
-//     }, 1000)
-// })
-
-// infoIcon.addEventListener('mouseout', function() {
-//     infoMessage.style.display = 'none'
-// })
-
-// infoIcon.addEventListener('click', function () {
-//     if (infoMessage.style.display === 'block') {
-//         infoMessage.style.display = 'none'
-//     } else {
-//         infoMessage.style.display = 'block'
-//     }
-// })
 
 infoIcon.addEventListener('click', function () {
     if (infoMessage.style.display === 'block') {
@@ -158,139 +128,43 @@ profileOptionsButton.addEventListener('blur', function () {
     profileOptionsDropdown.style.display = 'none'
 })
 
-const searchInput = document.querySelector('.searchInput')
-
-searchInput.addEventListener('keydown', function (event) {
-    // Filtrare pe FE
-
-    const data = [
-        {
-            username: 'Username 1',
-            likes: 10,
-            shares: 15,
-            comments: [],
-            title: 'Ceva',
-            description: 'Altceva'
-        },
-        {
-            username: 'Username 2',
-            likes: 20,
-            shares: 25,
-            comments: [],
-            title: 'Titlu 2',
-            description: 'Description 2'
-        }
-    ]
-
-
-    // Ne va returna numai rezultatele in care termenul cautat este 100% identic cu valoarea proprietatii
-    // setTimeout(() => {
-    //     const filtredResults = data.filter(post => post.username === event.target.value)
-    //     console.log(filtredResults)
-    // })
-
-    // Ne va returna orice rezultat care contine sirul de caractere folosit la cautare
-    setTimeout(() => {
-        const filterdResults = data.filter( post => post.username.includes(event.target.value))
-        console.log(filterdResults)
-    })
-
-    // Filtrare pe BE
-
-    filterData(event.target.value).then( () => {
-        // manipularea datelor si afisarea
-    })
-
-})
-
-async function filterData(searchTerm) {
-    const filteredPostUrl = 'url'
-    let filteredData = {
-        searchTerm: searchTerm
-    }
-
-    const filterPostConfig = {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify(filteredData)
-    }
-
-    const response = await fetch(filteredPostUrl, filterPostConfig)
-
-    return response.json()
+function openForm() {
+    document.getElementById("myForm").style.display = "block";
 }
 
-// Right navigation => Send message to user/group
+function closeForm() {
+    document.getElementById("myForm").style.display = "none";
+}
 
-const onlineUserElements = document.querySelectorAll('.onlineUser')
-console.dir(onlineUserElements)
+closeForm()
+
+const onlineUserElements = document.querySelectorAll('.onlineUser');
+const label = document.getElementById('messageLabel');
 
 onlineUserElements.forEach(element => {
     element.addEventListener('click', function (event) {
         if (event) {
-            const user = element.innerText
-            let message = prompt(`Insert your message for ${user} below: `)
-            if (message !== null && message !== '') {
-                alert(`Your message for ${user} was: ` + message)
-                console.log(message)
-                element.style.background = 'aquamarine'
-            } else {
-                alert('Insert your message first!')
-            }
+            openForm();
+            label.innerText = `Message to ${this.innerText}`;
         }
     })
 })
 
-const onlineGroupElements = document.querySelectorAll('.onlineGroup')
+function sendMessage() {
+    document.querySelector('.message').style.display = "none";
+    document.querySelector('.btn').innerText = "Sent!";
+    document.querySelector('.btn').style.backgroundColor = "aquamarine";
+}
+
+closeForm()
+
+const onlineGroupElements = document.querySelectorAll('.onlineGroup');
 
 onlineGroupElements.forEach(element => {
     element.addEventListener('click', function (event) {
         if (event) {
-            const group = element.innerText
-            let message = prompt(`Insert your message for ${group} below: `)
-            if (message !== null && message !== '') {
-                alert(`Your message ${group} was: ` + message)
-                console.log(message)
-                element.style.background = 'aquamarine'
-            } else {
-                alert('Insert your message first!')
-            }
+            openForm();
+            label.innerText = `Message to ${this.innerText}`;
         }
     })
-})
-
-// Left navigation
-
-const bloodDonationElement = document.getElementById('bloodDonation')
-const marketplaceElement = document.getElementById('marketplace')
-const adActivityElement = document.getElementById('adActivity')
-const fundraisersElement = document.getElementById('fundraisers')
-const savedItemsElement = document.getElementById('savedItems')
-
-bloodDonationElement.addEventListener('click', function () {
-    alert('There are not scheduled nearby any blood donation events!')
-})
-
-marketplaceElement.addEventListener('click', function () {
-    let message = prompt('If you want to use Marketplace, you need first to agree to use your profile info! Enter AGREE or OK or YES below:')
-    if (message === 'AGREE' || message === 'agree' || message === 'Agree' || message === 'OK' || message === 'ok' || message === 'Ok' || message === 'YES' || message === 'yes' || message === 'Yes') {
-        alert('Your marketplace account is created!')
-        console.log(message)
-    } else {
-        alert('You need first to agree to use your profile info, before using Marketplace!')
-    }
-})
-
-adActivity.addEventListener('click', function () {
-    alert('You do not have any running ads!')
-})
-
-fundraisers.addEventListener('click', function () {
-    alert('You have not raised money for any cause!')
-})
-
-savedItemsElement.addEventListener('click', function () {
-    alert('You do not have any saved items in your collection!')
 })

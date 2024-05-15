@@ -97,23 +97,11 @@
                 <hr style="border: 0">
                 <hr style="border: 0">
                 <hr style="border: 0">
-                <!-- <li><a href="#"><i class="bi bi-messenger navIcons"></i><strong> Messenger</strong></a></li>
-                <hr style="border: 0">
-                <hr style="border: 0"> -->
                 <li id="bloodDonation"><a href="#"><i class="bi bi-droplet navIcons"></i><strong> Blood
                             Donations</strong></a></li>
                 <hr style="border: 0">
                 <hr style="border: 0">
                 <hr style="border: 0">
-                <!-- <li id="climateCenter"><a href="#"><i class="bi bi-tree navIcons"></i><strong> Climate Science Center</strong></a></li>
-                <hr style="border: 0">
-                <hr style="border: 0"> -->
-                <!-- <li id="playGames"><a href="#"><i class="bi bi-joystick navIcons"></i><strong> Play games</strong></a></li>
-                <hr style="border: 0">
-                <hr style="border: 0"> -->
-                <!-- <li id="videoGames"><a href="#"><i class="bi bi-controller navIcons"></i><strong> Gaming Video</strong></a></li>
-                <hr style="border: 0">
-                <hr style="border: 0"> -->
                 <li id="marketplace"><a href="#"><i class="bi bi-shop-window navIcons"></i><strong>
                             Marketplace</strong></a></li>
                 <hr style="border: 0">
@@ -124,12 +112,6 @@
                 <hr style="border: 0">
                 <hr style="border: 0">
                 <hr style="border: 0">
-                <!-- <li id="adsManager"><a href="#"><i class="bi bi-badge-ad navIcons"></i><strong> Ads Manager</strong></a></li>
-                <hr style="border: 0">
-                <hr style="border: 0"> -->
-                <!-- <li id="ordersPayments"><a href="#"><i class="bi bi-credit-card navIcons"></i><strong> Orders and payments</strong></a></li>
-                <hr style="border: 0">
-                <hr style="border: 0"> -->
                 <li id="fundraisers"><a href="#"><i class="bi bi-heart navIcons"></i><strong> Fundraisers</strong></a>
                 </li>
                 <hr style="border: 0">
@@ -328,7 +310,16 @@
                     </li>
                 </ul>
             </div>
+            <hr>
         </aside>
+        <div class="chat-popup" id="myForm">
+            <form class="form-container">
+              <label for="msg" id="messageLabel"><strong>Message to: </strong></label>
+              <textarea placeholder="Type message.." name="msg" class="message"></textarea>
+              <button type="submit" class="btn" onclick="sendMessage()">Send</button>
+              <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+            </form>
+        </div>
     </main>
     <br><br><br><br><br><br><br><br><br><br><br><br>
 

@@ -1,17 +1,22 @@
-const likeButton = document.getElementById('like')
-const liElement = document.getElementById('page')
-
+const liElements = document.getElementsByClassName('page')
 const ulElement = document.getElementById('pageList')
-console.dir(liElement)
 
-likeButton.addEventListener('click', function () {
-    likeButton.style.backgroundColor = 'blue'
-    likeButton.style.color = 'white'
-    likeButton.innerText = 'Liked'
+for (let i = 0; i < liElements.length; i++) {
 
-    liElement.style.display = 'none'
+    const liElement = liElements[i];
+    const likeButtons = liElement.querySelectorAll('.like')
 
-    const newLiElement = document.createElement('li')
-    ulElement.appendChild(newLiElement)
-    newLiElement.innerHTML = liElement.innerHTML
-})
+    likeButtons.forEach(likeButton => {
+        likeButton.addEventListener('click', function (event) {
+            likeButton.style.backgroundColor = 'blue'
+            likeButton.style.color = 'white'
+            likeButton.innerText = 'Liked'
+
+            event.currentTarget.parentElement.style.display = 'none'
+
+            const newLiElement = document.createElement('li')
+            ulElement.appendChild(newLiElement)
+            newLiElement.innerHTML = event.currentTarget.parentElement.innerHTML
+        })
+    })
+}

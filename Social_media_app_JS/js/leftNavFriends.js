@@ -1,11 +1,7 @@
 const noOfFriendsElement = document.getElementById('friendsNumber')
-const confirmBtn = document.getElementById('confirm')
-const removeBtn = document.getElementById('remove')
-const friendRequestElement = document.getElementById('friendRequest')
+const friendRequestElements = document.getElementsByClassName('friendRequest')
 const ulElement = document.getElementById('friendList')
-const suggestedFriendElement = document.querySelector('#suggestedFriend')
-const addFriendBtn = document.querySelector('#addFriend')
-const removeRequestBtn = document.querySelector('#removeRequest')
+const suggestedFriendElements = document.getElementsByClassName('suggestedFriend')
 
 
 let isFriend = false
@@ -16,32 +12,59 @@ function getNumberOfFriends() {
 
 getNumberOfFriends()
 
-confirmBtn.addEventListener('click', function () {
-    isFriend = !isFriend
+for (let i = 0; i < friendRequestElements.length; i++) {
 
-    if (isFriend) {
-        noOfFriendsElement.innerText = Number(noOfFriendsElement.innerText) + 1
+    const friendRequestElement = friendRequestElements[i];
+    const confirmBtns = friendRequestElement.querySelectorAll('.confirm');
+    const removeBtns = friendRequestElement.querySelectorAll('.remove');
 
-        friendRequestElement.style.display = 'none'
+    confirmBtns.forEach(confirmBtn => {
+        confirmBtn.addEventListener('click', function (event) {
 
-        const newLiElement = document.createElement('li')
-        ulElement.appendChild(newLiElement)
+            isFriend = !isFriend
 
-        newLiElement.innerHTML = friendRequestElement.innerHTML
-    } else {
-        noOfFriendsElement.innerText = Number(noOfFriendsElement.innerText)
-    }
-})
+            if (isFriend) {
+                noOfFriendsElement.innerText = Number(noOfFriendsElement.innerText) + 1
 
-removeBtn.addEventListener('click', function () {
-    friendRequestElement.style.display = 'none'
-})
+                event.currentTarget.parentElement.style.display = 'none';
 
-addFriendBtn.addEventListener('click', function () {
-    suggestedFriendElement.style.display = 'none'
-    alert('Request sent!')
-})
+                const newLiElement = document.createElement('li')
+                ulElement.appendChild(newLiElement)
 
-removeRequestBtn.addEventListener('click', function () {
-    suggestedFriendElement.style.display = 'none'
-})
+                newLiElement.innerHTML = event.currentTarget.parentElement.innerHTML;
+            } else {
+                noOfFriendsElement.innerText = Number(noOfFriendsElement.innerText)
+            }
+        })
+    })
+
+
+    removeBtns.forEach(removeBtn => {
+        removeBtn.addEventListener('click', function (event) {
+            event.currentTarget.parentElement.style.display = 'none';
+        })
+
+    })
+}
+
+for (let i = 0; i < friendRequestElements.length; i++) {
+
+    const suggestedFriendElement = suggestedFriendElements[i];
+    const addFriendBtns = suggestedFriendElement.querySelectorAll('.addFriend');
+    const removeRequestBtns = suggestedFriendElement.querySelectorAll('.removeRequest');
+
+    addFriendBtns.forEach(addFriendBtn => {
+        addFriendBtn.addEventListener('click', function () {
+            suggestedFriendElement.style.display = 'none'
+            alert('Request sent!')
+        })
+    })
+
+    removeRequestBtns.forEach(removeRequestBtn => {
+        removeRequestBtn.addEventListener('click', function () {
+            suggestedFriendElement.style.display = 'none'
+        })
+    })
+}
+
+

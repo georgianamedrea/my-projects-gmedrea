@@ -11,24 +11,86 @@
     <link rel="stylesheet" href="../css/leftNavPages.css">
 </head>
 <body>
-    <a href="feed.html"><img src="../assests/back.png" class="backImage" alt="back icon"></a>
+    <header>
+        <div class="mainSearch">
+            <a href="#"><i class="bi bi-facebook logo"></i></a>
+            <input type="search" class="searchInput" placeholder="Search on social media">
+        </div>
+
+        <nav class="mainNavigation">
+            <ul class="navigation">
+                <li>
+                    <a href="feed.html" title="Home"><i class="bi bi-house navIcons"></i></a>
+                </li>
+                <li>
+                    <a href="#" title="My Profile">
+                        <i class="bi bi-person navIcons"></i>
+                    </a>
+                </li>
+                <li><a href="#" title="Messenger"><i class="bi bi-messenger navIcons"></i></a></li>
+                <li><a href="#" title="Video"><i class="bi bi-camera-reels navIcons"></i></a></li>
+            </ul>
+        </nav>
+
+        <ul class="links">
+            <li><a href="landingPage.html" title="To Landing page"><i class="bi bi-plus-circle navIcons"></i></a></li>
+            <li><a href="#" class="bellIcon" title="Notifications"><i class="bi bi-bell navIcons"></i>
+                    <span>12</span></a></li>
+            <li>
+                <div class="accountSettings">
+                    <button id="accountSettingsButton"><i class="bi bi-gear navIcons"></i></button>
+                    <div class="accountSettingsMenu">
+                        <button>Profile Settings</button>
+                        <button id="logoutButton">Logout</button>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </header>
     
-    <h3>Pages suggested for you: </h3>
+    <h3>Pages suggested for you </h3>
     <section class="mainContent">
         <ul>
-            <li id="page">
+            <li class="page">
                 <a href="#"><img
                         src="../assests/nature 3.jpeg"
                         alt="userProfile" width="250">
                 </a>
                 <span class="pageName"><strong>Page name 3</strong></span>
                 <span class="pageFollowers">11000 people like this page</span>
-                <button id="like">Like</button>
+                <button class="like">Like</button>
+            </li>
+            <li class="page">
+                <a href="#"><img
+                        src="../assests/nature 3.jpeg"
+                        alt="userProfile" width="250">
+                </a>
+                <span class="pageName"><strong>Page name 7</strong></span>
+                <span class="pageFollowers">100 people like this page</span>
+                <button class="like">Like</button>
+            </li>
+            <li class="page">
+                <a href="#"><img
+                        src="../assests/nature 3.jpeg"
+                        alt="userProfile" width="250">
+                </a>
+                <span class="pageName"><strong>Page name 9</strong></span>
+                <span class="pageFollowers">300 people like this page</span>
+                <button class="like">Like</button>
+            </li>
+            <li class="page">
+                <a href="#"><img
+                        src="../assests/nature 3.jpeg"
+                        alt="userProfile" width="250">
+                </a>
+                <span class="pageName"><strong>Page name 10</strong></span>
+                <span class="pageFollowers">123 people like this page</span>
+                <button class="like">Like</button>
             </li>
         </ul>
     </section>
 
-    <h3>Pages that you are following: </h3>
+    <h3>Pages that you are following </h3>
     <section class="mainContent">
         <ul id="pageList">
             <li class="page">

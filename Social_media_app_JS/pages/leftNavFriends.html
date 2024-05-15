@@ -13,8 +13,42 @@
 </head>
 
 <body>
-    <a href="feed.html"><img src="../assests/back.png" class="backImage" alt="back icon"></a>
-    <br>
+    <header>
+        <div class="mainSearch">
+            <a href="#"><i class="bi bi-facebook logo"></i></a>
+            <input type="search" class="searchInput" placeholder="Search on social media">
+        </div>
+
+        <nav class="mainNavigation">
+            <ul class="navigation">
+                <li>
+                    <a href="feed.html" title="Home"><i class="bi bi-house navIcons"></i></a>
+                </li>
+                <li>
+                    <a href="#" title="My Profile">
+                        <i class="bi bi-person navIcons"></i>
+                    </a>
+                </li>
+                <li><a href="#" title="Messenger"><i class="bi bi-messenger navIcons"></i></a></li>
+                <li><a href="#" title="Video"><i class="bi bi-camera-reels navIcons"></i></a></li>
+            </ul>
+        </nav>
+
+        <ul class="links">
+            <li><a href="landingPage.html" title="To Landing page"><i class="bi bi-plus-circle navIcons"></i></a></li>
+            <li><a href="#" class="bellIcon" title="Notifications"><i class="bi bi-bell navIcons"></i>
+                    <span>12</span></a></li>
+            <li>
+                <div class="accountSettings">
+                    <button id="accountSettingsButton"><i class="bi bi-gear navIcons"></i></button>
+                    <div class="accountSettingsMenu">
+                        <button>Profile Settings</button>
+                        <button id="logoutButton">Logout</button>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </header>
 
     <aside class="leftContent">
         <h2><span id="friendsNumber">447</span> Friends</h2>
@@ -87,26 +121,143 @@
     <section class="mainContent">
         <h3>Friend Requests</h3>
         <ul>
-            <li id="friendRequest">
+            <li class="friendRequest">
                 <a href="#"><img
                         src="https://images.unsplash.com/photo-1423479185712-25d4a4fe1006?q=80&w=2076&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                         alt="userProfile" width="150">
                 </a>
                 <span class="userName"><strong>Username 13</strong></span>
-                <button id="confirm"><strong>Confirm</strong></button>
-                <button id="remove"><strong>Remove</strong></button>
+                <button class="confirm"><strong>Confirm</strong></button>
+                <button class="remove"><strong>Remove</strong></button>
+            </li>
+            <li class="friendRequest">
+                <a href="#"><img
+                        src="https://images.unsplash.com/photo-1423479185712-25d4a4fe1006?q=80&w=2076&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="userProfile" width="150">
+                </a>
+                <span class="userName"><strong>Username 14</strong></span>
+                <button class="confirm"><strong>Confirm</strong></button>
+                <button class="remove"><strong>Remove</strong></button>
+            </li>
+            <li class="friendRequest">
+                <a href="#"><img
+                        src="https://images.unsplash.com/photo-1423479185712-25d4a4fe1006?q=80&w=2076&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="userProfile" width="150">
+                </a>
+                <span class="userName"><strong>Username 15</strong></span>
+                <button class="confirm"><strong>Confirm</strong></button>
+                <button class="remove"><strong>Remove</strong></button>
+            </li>
+            <li class="friendRequest">
+                <a href="#"><img
+                        src="https://images.unsplash.com/photo-1423479185712-25d4a4fe1006?q=80&w=2076&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="userProfile" width="150">
+                </a>
+                <span class="userName"><strong>Username 16</strong></span>
+                <button class="confirm"><strong>Confirm</strong></button>
+                <button class="remove"><strong>Remove</strong></button>
+            </li>
+            <li class="friendRequest">
+                <a href="#"><img
+                        src="https://images.unsplash.com/photo-1423479185712-25d4a4fe1006?q=80&w=2076&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="userProfile" width="150">
+                </a>
+                <span class="userName"><strong>Username 17</strong></span>
+                <button class="confirm"><strong>Confirm</strong></button>
+                <button class="remove"><strong>Remove</strong></button>
+            </li>
+            <li class="friendRequest">
+                <a href="#"><img
+                        src="https://images.unsplash.com/photo-1423479185712-25d4a4fe1006?q=80&w=2076&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="userProfile" width="150">
+                </a>
+                <span class="userName"><strong>Username 18</strong></span>
+                <button class="confirm"><strong>Confirm</strong></button>
+                <button class="remove"><strong>Remove</strong></button>
+            </li> 
+            <li class="friendRequest">
+                <a href="#"><img
+                        src="https://images.unsplash.com/photo-1423479185712-25d4a4fe1006?q=80&w=2076&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="userProfile" width="150">
+                </a>
+                <span class="userName"><strong>Username 19</strong></span>
+                <button class="confirm"><strong>Confirm</strong></button>
+                <button class="remove"><strong>Remove</strong></button>
+            </li>
+            <li class="friendRequest">
+                <a href="#"><img
+                        src="https://images.unsplash.com/photo-1423479185712-25d4a4fe1006?q=80&w=2076&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="userProfile" width="150">
+                </a>
+                <span class="userName"><strong>Username 20</strong></span>
+                <button class="confirm"><strong>Confirm</strong></button>
+                <button class="remove"><strong>Remove</strong></button>
             </li>
         </ul>
         <h3>People you may know</h3>
         <ul>
-            <li id="suggestedFriend">
+            <li class="suggestedFriend">
                 <a href="#"><img
                         src="https://plus.unsplash.com/premium_photo-1667667720425-6972aff75f6b?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                         alt="userProfile" width="150">
                 </a>
-                <span class="userName"><strong>Username 14</strong></span>
-                <button id="addFriend"><strong>Add friend</strong></button>
-                <button id="removeRequest"><strong>Remove</strong></button>
+                <span class="userName"><strong>Username 21</strong></span>
+                <button class="addFriend"><strong>Add friend</strong></button>
+                <button class="removeRequest"><strong>Remove</strong></button>
+            </li>
+            <li class="suggestedFriend">
+                <a href="#"><img
+                        src="https://plus.unsplash.com/premium_photo-1667667720425-6972aff75f6b?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="userProfile" width="150">
+                </a>
+                <span class="userName"><strong>Username 22</strong></span>
+                <button class="addFriend"><strong>Add friend</strong></button>
+                <button class="removeRequest"><strong>Remove</strong></button>
+            </li>
+            <li class="suggestedFriend">
+                <a href="#"><img
+                        src="https://plus.unsplash.com/premium_photo-1667667720425-6972aff75f6b?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="userProfile" width="150">
+                </a>
+                <span class="userName"><strong>Username 23</strong></span>
+                <button class="addFriend"><strong>Add friend</strong></button>
+                <button class="removeRequest"><strong>Remove</strong></button>
+            </li>
+            <li class="suggestedFriend">
+                <a href="#"><img
+                        src="https://plus.unsplash.com/premium_photo-1667667720425-6972aff75f6b?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="userProfile" width="150">
+                </a>
+                <span class="userName"><strong>Username 24</strong></span>
+                <button class="addFriend"><strong>Add friend</strong></button>
+                <button class="removeRequest"><strong>Remove</strong></button>
+            </li>
+            <li class="suggestedFriend">
+                <a href="#"><img
+                        src="https://plus.unsplash.com/premium_photo-1667667720425-6972aff75f6b?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="userProfile" width="150">
+                </a>
+                <span class="userName"><strong>Username 25</strong></span>
+                <button class="addFriend"><strong>Add friend</strong></button>
+                <button class="removeRequest"><strong>Remove</strong></button>
+            </li>
+            <li class="suggestedFriend">
+                <a href="#"><img
+                        src="https://plus.unsplash.com/premium_photo-1667667720425-6972aff75f6b?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="userProfile" width="150">
+                </a>
+                <span class="userName"><strong>Username 26</strong></span>
+                <button class="addFriend"><strong>Add friend</strong></button>
+                <button class="removeRequest"><strong>Remove</strong></button>
+            </li>
+            <li class="suggestedFriend">
+                <a href="#"><img
+                        src="https://plus.unsplash.com/premium_photo-1667667720425-6972aff75f6b?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                        alt="userProfile" width="150">
+                </a>
+                <span class="userName"><strong>Username 27</strong></span>
+                <button class="addFriend"><strong>Add friend</strong></button>
+                <button class="removeRequest"><strong>Remove</strong></button>
             </li>
         </ul>
     </section>

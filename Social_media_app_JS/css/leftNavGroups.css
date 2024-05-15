@@ -3,11 +3,131 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.backImage {
-    width: 2rem;
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
     position: fixed;
-    top: 1rem;
-    left: 1rem;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: lightblue;
+}
+
+.mainSearch {
+    display: flex;
+    align-items: center;
+}
+
+.mainSearch .logo {
+    padding: 1rem;
+    font-size: 3rem;
+    color: royalblue;
+}
+
+.mainSearch .logo:hover {
+    color: darkblue;
+}
+
+.mainSearch .searchInput {
+    height: 3rem;
+    border-radius: 1.5rem;
+    padding: 0 1rem;
+    border-color: beige;
+}
+
+.mainSearch .searchInput:focus {
+    border: 0.35rem solid teal;
+}
+
+.navigation,
+.links {
+    display: flex;
+}
+
+.accountSettings {
+    position: relative;
+}
+
+.accountSettings button {
+    cursor: pointer;
+    border: none;
+    background-color: inherit;
+}
+
+.accountSettingsMenu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 75px;
+    right: 0;
+    width: 180px;
+    background-color: grey;
+}
+
+.accountSettingsMenu button {
+    padding: 10px 0;
+    cursor: pointer;
+}
+
+.accountSettingsMenu button:hover {
+    background-color: #add8e6;
+}
+
+
+.navigation>li>a {
+    border-radius: 50%;
+    background-color: aquamarine;
+    margin: 0 0.35rem;
+    display: flex;
+}
+
+.navigation>li>a:hover {
+    background-color: teal;
+    border: 1px solid royalblue;
+}
+
+.navIcons {
+    font-size: 3rem;
+    color: royalblue;
+    margin: 0 0.5rem;
+}
+
+.navIcons:hover {
+    color: darkblue;
+}
+
+.bellIcon {
+    position: relative;
+    display: block;
+}
+
+.bellIcon span {
+    width: 1.5rem;
+    height: 1.5rem;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+    color: white;
+    font-weight: bold;
 }
 
 h2 {
@@ -18,7 +138,7 @@ h2 {
     font-size: large;
     border-radius: 10px;
     margin-left: 2px;
-    margin-top: 40px;
+    margin-top: 0;
     position: fixed;
 }
 
@@ -29,7 +149,7 @@ h2 {
     height: 600px;
     border: 1px solid whitesmoke;
     overflow: auto;
-    margin-top: 90px;
+    margin-top: 3%;
     padding: 10px;
 }
 
@@ -57,6 +177,7 @@ ul {
 
 .mainContent {
     width: 40%;
+    margin-top: 8%;
 }
 
 .mainContent .post {
@@ -79,10 +200,9 @@ ul {
     align-items: center;
 }
 
-/* .mainContent .post .postHeader .profileUserInfo .profileImage {
-    width: 3rem;
-    border-radius: 50%;
-} */
+.mainContent .post .postHeader .profileUserInfo .profileImage {
+        margin-top: 4.8%;
+}
 
 .mainContent .post .postHeader .profileUserInfo .profileName {
     display: flex;
