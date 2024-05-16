@@ -201,7 +201,7 @@ ul {
 }
 
 .mainContent .post .postHeader .profileUserInfo .profileImage {
-        margin-top: 4.8%;
+    margin-top: 4.8%;
 }
 
 .mainContent .post .postHeader .profileUserInfo .profileName {
@@ -247,26 +247,41 @@ ul {
     justify-content: center;
 }
 
-.mainContent .post .postHeader .profileUserInfo .imageContainer {
+.mainContent .post .postHeader .profileUserInfo {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 10px;
+    width: 300px;
+}
+
+.mainContent .post .postHeader .profileUserInfo .imageContainer {
+    position: relative;
+    height: 50px;
+    width: 50px;
 }
 
 .mainContent .post .postHeader .profileUserInfo .imageContainer .groupImage {
-    position: relative;
+    position: absolute;
+    width: 100px;
     border-radius: 10px;
+    bottom: 1px;
+    left: -8px;
 }
 
 .mainContent .post .postHeader .profileUserInfo .imageContainer .profileImage {
-    position: absolute;
-    top: 10.3%;
-    left: 35%;
+    position: relative;
+    top: 5px;
+    left: 70px;
+    z-index: 1;
 }
 
 .mainContent .post .postHeader .profileUserInfo .profileName {
-    position: absolute;
-    left: 38%;
     display: flex;
-    gap: 5px;
+    flex-direction: column;
+    position: relative;
+    left: -15px;
 }
 
 .content .imgWrapper .imgContent {
@@ -307,6 +322,7 @@ hr {
     color: royalblue;
     border-radius: 1rem;
 }
+
 .post .actions .reaction:hover {
     color: teal;
     background-color: lightblue;

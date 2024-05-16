@@ -250,7 +250,7 @@ hr {
     line-height: 1.3;
 }
 
-.form-popup {
+.formPopup {
     display: none;
     position: fixed;
     bottom: 0;
@@ -260,7 +260,7 @@ hr {
     right: 0;
 }
 
-.form-container {
+.formContainer {
     max-width: 300px;
     padding: 10px;
     background-color: white;
@@ -270,7 +270,7 @@ hr {
     z-index: 9999;
 }
 
-.form-container textarea {
+.formContainer textarea {
     width: 100%;
     padding: 15px;
     margin: 5px 0 22px 0;
@@ -280,7 +280,7 @@ hr {
     min-height: 200px;
 }
 
-.form-container .btn {
+.formContainer .btnSubmit {
     background-color: lightblue;
     color: black;
     padding: 16px 20px;
@@ -291,9 +291,15 @@ hr {
     opacity: 0.8;
 }
 
-.form-container .cancel {
+.formContainer .btnCancel {
     background-color: lightgrey;
     color: black;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
 }
 
 .mainContent {
@@ -317,14 +323,11 @@ hr {
     align-items: center;
 }
 
-/* .mainContent .post .postHeader .profileUserInfo .profileImage {
-    width: 3rem;
-    border-radius: 50%;
-} */
-
 .mainContent .post .postHeader .profileUserInfo .profileName {
     display: flex;
     flex-direction: column;
+    position: relative;
+    left: 0.5rem;
 }
 
 .mainContent .post .postHeader .profileOptions {
@@ -352,7 +355,6 @@ hr {
 .profileOptionsDropdown {
     position: absolute;
     z-index: 1;
-    /* right: 10px; */
     margin-left: -128px;
     width: 150px;
     display: flex;
@@ -447,11 +449,6 @@ hr {
     gap: 0.5rem;
 }
 
-/* .commentSection .profileImage {
-    width: 3rem;
-    border-radius: 50%;
-} */
-
 .commentSection .newCommentField {
     width: 80%;
     border-radius: 0.5rem;
@@ -494,11 +491,6 @@ hr {
     margin-left: 1rem;
     gap: 0.5rem;
 }
-
-/*.userComments .profileUserComment .profileImage {
-    width: 3rem;
-    border-radius: 50%;
-} */
 
 .profileImage {
     width: 3rem;

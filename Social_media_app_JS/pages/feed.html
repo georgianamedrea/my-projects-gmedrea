@@ -126,7 +126,7 @@
                     <div class="profileUserInfo">
                         <a href=""><img src="../assests/profile.jpg" alt="user profile" class="profileImage"></a>
                         <div class="profileName">
-                            <span>Georgiana Medrea</span>
+                            <span class="myName">Georgiana Medrea</span>
                             <span>06 Dec 2023</span>
                         </div>
                     </div>
@@ -142,7 +142,7 @@
 
                 <div class="content">
                     <div class="imgWrapper">
-                        <img src="../assests/post.jpg" alt="travel post" class="imgContent">
+                        <img src="../assests/post 3.jpg" alt="travel post" class="imgContent">
                         <div class="infoIconWrapper">
                             <i class="bi bi-info-circle infoIcon" tabindex="1"></i>
                             <p class="infoMessage">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
@@ -166,11 +166,11 @@
                 <div class="reacts">
                     <div class="likesInfo">
                         <i class="bi bi-hand-thumbs-up reactsIcons"></i>
-                        <span id="likesNumber"></span> <span> likes</span>
+                        <span class="likesNumber">12</span> <span> likes</span>
                     </div>
 
                     <div class="commentsInfo">
-                        <span id="sharesNumber">15</span> <span> shares</span>
+                        <span class="sharesNumber">24</span> <span> shares</span>
                         <i class="bi bi-chat-dots reactsIcons"></i>
                     </div>
                 </div>
@@ -197,7 +197,7 @@
                 <hr>
 
                 <div class="commentSection">
-                    <a href=""><img src="../assests/profile.jpg" alt="user profile" class="profileImage"></a>
+                    <a href=""><img src="../assests/Username 1.jpg" alt="user profile" class="profileImage"></a>
                     <input type="text" placeholder="Adauga un comentariu" class="newCommentField" id="commentInput">
                     <button class="insertCommentButton" id="commentInputButton"><i class="bi bi-send"></i></button>
                 </div>
@@ -206,17 +206,436 @@
 
                     <div class="commentContent">
                         <div class="profileUserComment">
-                            <a href=""><img src="../assests/profile.jpg" alt="user profile" class="profileImage"></a>
-                            <span>Username</span>
+                            <a href=""><img src="../assests/Username 1.jpg" alt="user profile" class="profileImage"></a>
+                            <span>Username 1</span>
                         </div>
 
                         <div class="userCommentText">
-                            <span id="commentMessage">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit,
+                            <span class="commentMessage">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit,
                                 a accusamus.
                                 Accusantium
                                 recusandae placeat cupiditate a possimus ipsam doloremque sit.</span>
                             <div class="emojiReaction">🥳</div>
-                            <span id="removeCommentButton">Remove this comment</span>
+                        </div>
+
+                        <div class="commentReaction">
+                            <strong class="commentReactionButton">Like</strong>
+                            <strong class="commentReactionButton">Comment</strong>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="post">
+                <div class="postHeader">
+                    <div class="profileUserInfo">
+                        <a href=""><img src="../assests/profile.jpg" alt="user profile" class="profileImage"></a>
+                        <div class="profileName">
+                            <span class="myName">Georgiana Medrea</span>
+                            <span>07 Dec 2023</span>
+                        </div>
+                    </div>
+
+                    <div class="profileOptionsWrapper">
+                        <button class="profileOptions"><i class="bi bi-three-dots"></i></button>
+                        <div class="profileOptionsDropdown">
+                            <button>Edit this post</button>
+                            <button>Remove this post</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <div class="imgWrapper">
+                        <img src="../assests/post 2.jpg" alt="travel post" class="imgContent">
+                        <div class="infoIconWrapper">
+                            <i class="bi bi-info-circle infoIcon" tabindex="1"></i>
+                            <p class="infoMessage">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+                                quasi vero dolores esse
+                                deleniti quod tenetur totam et. Laborum dolores provident, suscipit blanditiis eaque
+                                quis.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <strong class="postTitle">Post title</strong>
+
+                    <p class="postDescription">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident consequatur laborum quaerat
+                        ut nesciunt necessitatibus reiciendis fuga quibusdam consequuntur animi!
+                    </p>
+                    <a href="landingPage.html"><strong>Read more..</strong></a>
+                </div>
+
+                <div class="reacts">
+                    <div class="likesInfo">
+                        <i class="bi bi-hand-thumbs-up reactsIcons"></i>
+                        <span class="likesNumber">22</span> <span> likes</span>
+                    </div>
+
+                    <div class="commentsInfo">
+                        <span class="sharesNumber">15</span> <span> shares</span>
+                        <i class="bi bi-chat-dots reactsIcons"></i>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="reactsActions">
+                    <ul class="actions">
+                        <li class="reaction" id="likeButton">
+                            <i class="bi bi-hand-thumbs-up"></i>
+                            <span>Like</span>
+                        </li>
+                        <li class="reaction" id="commentButton">
+                            <i class="bi bi-chat-dots"></i>
+                            <span>Comments</span>
+                        </li>
+                        <li class="reaction" id="shareButton">
+                            <i class="bi bi-share"></i>
+                            <span>Share</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <hr>
+
+                <div class="commentSection">
+                    <a href=""><img src="../assests/Username 6.jpg" alt="user profile" class="profileImage"></a>
+                    <input type="text" placeholder="Adauga un comentariu" class="newCommentField" id="commentInput">
+                    <button class="insertCommentButton" id="commentInputButton"><i class="bi bi-send"></i></button>
+                </div>
+
+                <div class="userComments">
+
+                    <div class="commentContent">
+                        <div class="profileUserComment">
+                            <a href=""><img src="../assests/Username 6.jpg" alt="user profile" class="profileImage"></a>
+                            <span>Username 6</span>
+                        </div>
+
+                        <div class="userCommentText">
+                            <span class="commentMessage">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit,
+                                a accusamus.
+                                Accusantium
+                                recusandae placeat cupiditate a possimus ipsam doloremque sit.</span>
+                            <div class="emojiReaction">🥳</div>
+                        </div>
+
+                        <div class="commentReaction">
+                            <strong class="commentReactionButton">Like</strong>
+                            <strong class="commentReactionButton">Comment</strong>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="post">
+                <div class="postHeader">
+                    <div class="profileUserInfo">
+                        <a href=""><img src="../assests/profile.jpg" alt="user profile" class="profileImage"></a>
+                        <div class="profileName">
+                            <span class="myName">Georgiana Medrea</span>
+                            <span>08 Dec 2023</span>
+                        </div>
+                    </div>
+
+                    <div class="profileOptionsWrapper">
+                        <button class="profileOptions"><i class="bi bi-three-dots"></i></button>
+                        <div class="profileOptionsDropdown">
+                            <button>Edit this post</button>
+                            <button>Remove this post</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <div class="imgWrapper">
+                        <img src="../assests/post 3.jpg" alt="travel post" class="imgContent">
+                        <div class="infoIconWrapper">
+                            <i class="bi bi-info-circle infoIcon" tabindex="1"></i>
+                            <p class="infoMessage">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+                                quasi vero dolores esse
+                                deleniti quod tenetur totam et. Laborum dolores provident, suscipit blanditiis eaque
+                                quis.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <strong class="postTitle">Post title</strong>
+
+                    <p class="postDescription">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident consequatur laborum quaerat
+                        ut nesciunt necessitatibus reiciendis fuga quibusdam consequuntur animi!
+                    </p>
+                    <a href="landingPage.html"><strong>Read more..</strong></a>
+                </div>
+
+                <div class="reacts">
+                    <div class="likesInfo">
+                        <i class="bi bi-hand-thumbs-up reactsIcons"></i>
+                        <span class="likesNumber">25</span> <span> likes</span>
+                    </div>
+
+                    <div class="commentsInfo">
+                        <span class="sharesNumber">80</span> <span> shares</span>
+                        <i class="bi bi-chat-dots reactsIcons"></i>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="reactsActions">
+                    <ul class="actions">
+                        <li class="reaction" id="likeButton">
+                            <i class="bi bi-hand-thumbs-up"></i>
+                            <span>Like</span>
+                        </li>
+                        <li class="reaction" id="commentButton">
+                            <i class="bi bi-chat-dots"></i>
+                            <span>Comments</span>
+                        </li>
+                        <li class="reaction" id="shareButton">
+                            <i class="bi bi-share"></i>
+                            <span>Share</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <hr>
+
+                <div class="commentSection">
+                    <a href=""><img src="../assests/Username 3.jpg" alt="user profile" class="profileImage"></a>
+                    <input type="text" placeholder="Adauga un comentariu" class="newCommentField" id="commentInput">
+                    <button class="insertCommentButton" id="commentInputButton"><i class="bi bi-send"></i></button>
+                </div>
+
+                <div class="userComments">
+
+                    <div class="commentContent">
+                        <div class="profileUserComment">
+                            <a href=""><img src="../assests/Username 3.jpg" alt="user profile" class="profileImage"></a>
+                            <span>Username 3</span>
+                        </div>
+
+                        <div class="userCommentText">
+                            <span class="commentMessage">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit,
+                                a accusamus.
+                                Accusantium
+                                recusandae placeat cupiditate a possimus ipsam doloremque sit.</span>
+                            <div class="emojiReaction">🥳</div>
+                        </div>
+
+                        <div class="commentReaction">
+                            <strong class="commentReactionButton">Like</strong>
+                            <strong class="commentReactionButton">Comment</strong>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="post">
+                <div class="postHeader">
+                    <div class="profileUserInfo">
+                        <a href=""><img src="../assests/profile.jpg" alt="user profile" class="profileImage"></a>
+                        <div class="profileName">
+                            <span class="myName">Georgiana Medrea</span>
+                            <span>10 Dec 2023</span>
+                        </div>
+                    </div>
+
+                    <div class="profileOptionsWrapper">
+                        <button class="profileOptions"><i class="bi bi-three-dots"></i></button>
+                        <div class="profileOptionsDropdown">
+                            <button>Edit this post</button>
+                            <button>Remove this post</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <div class="imgWrapper">
+                        <img src="../assests/post 2.jpg" alt="travel post" class="imgContent">
+                        <div class="infoIconWrapper">
+                            <i class="bi bi-info-circle infoIcon" tabindex="1"></i>
+                            <p class="infoMessage">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+                                quasi vero dolores esse
+                                deleniti quod tenetur totam et. Laborum dolores provident, suscipit blanditiis eaque
+                                quis.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <strong class="postTitle">Post title</strong>
+
+                    <p class="postDescription">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident consequatur laborum quaerat
+                        ut nesciunt necessitatibus reiciendis fuga quibusdam consequuntur animi!
+                    </p>
+                    <a href="landingPage.html"><strong>Read more..</strong></a>
+                </div>
+
+                <div class="reacts">
+                    <div class="likesInfo">
+                        <i class="bi bi-hand-thumbs-up reactsIcons"></i>
+                        <span class="likesNumber">49</span> <span> likes</span>
+                    </div>
+
+                    <div class="commentsInfo">
+                        <span class="sharesNumber">58</span> <span> shares</span>
+                        <i class="bi bi-chat-dots reactsIcons"></i>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="reactsActions">
+                    <ul class="actions">
+                        <li class="reaction" id="likeButton">
+                            <i class="bi bi-hand-thumbs-up"></i>
+                            <span>Like</span>
+                        </li>
+                        <li class="reaction" id="commentButton">
+                            <i class="bi bi-chat-dots"></i>
+                            <span>Comments</span>
+                        </li>
+                        <li class="reaction" id="shareButton">
+                            <i class="bi bi-share"></i>
+                            <span>Share</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <hr>
+
+                <div class="commentSection">
+                    <a href=""><img src="../assests/Username 8.jpg" alt="user profile" class="profileImage"></a>
+                    <input type="text" placeholder="Adauga un comentariu" class="newCommentField" id="commentInput">
+                    <button class="insertCommentButton" id="commentInputButton"><i class="bi bi-send"></i></button>
+                </div>
+
+                <div class="userComments">
+
+                    <div class="commentContent">
+                        <div class="profileUserComment">
+                            <a href=""><img src="../assests/Username 8.jpg" alt="user profile" class="profileImage"></a>
+                            <span>Username 8</span>
+                        </div>
+
+                        <div class="userCommentText">
+                            <span class="commentMessage">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit,
+                                a accusamus.
+                                Accusantium
+                                recusandae placeat cupiditate a possimus ipsam doloremque sit.</span>
+                            <div class="emojiReaction">🥳</div>
+                        </div>
+
+                        <div class="commentReaction">
+                            <strong class="commentReactionButton">Like</strong>
+                            <strong class="commentReactionButton">Comment</strong>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="post">
+                <div class="postHeader">
+                    <div class="profileUserInfo">
+                        <a href=""><img src="../assests/profile.jpg" alt="user profile" class="profileImage"></a>
+                        <div class="profileName">
+                            <span class="myName">Georgiana Medrea</span>
+                            <span>12 Dec 2023</span>
+                        </div>
+                    </div>
+
+                    <div class="profileOptionsWrapper">
+                        <button class="profileOptions"><i class="bi bi-three-dots"></i></button>
+                        <div class="profileOptionsDropdown">
+                            <button>Edit this post</button>
+                            <button>Remove this post</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <div class="imgWrapper">
+                        <img src="../assests/post 3.jpg" alt="travel post" class="imgContent">
+                        <div class="infoIconWrapper">
+                            <i class="bi bi-info-circle infoIcon" tabindex="1"></i>
+                            <p class="infoMessage">Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit
+                                quasi vero dolores esse
+                                deleniti quod tenetur totam et. Laborum dolores provident, suscipit blanditiis eaque
+                                quis.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <strong class="postTitle">Post title</strong>
+
+                    <p class="postDescription">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident consequatur laborum quaerat
+                        ut nesciunt necessitatibus reiciendis fuga quibusdam consequuntur animi!
+                    </p>
+                    <a href="landingPage.html"><strong>Read more..</strong></a>
+                </div>
+
+                <div class="reacts">
+                    <div class="likesInfo">
+                        <i class="bi bi-hand-thumbs-up reactsIcons"></i>
+                        <span class="likesNumber">22</span> <span> likes</span>
+                    </div>
+
+                    <div class="commentsInfo">
+                        <span class="sharesNumber">26</span> <span> shares</span>
+                        <i class="bi bi-chat-dots reactsIcons"></i>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="reactsActions">
+                    <ul class="actions">
+                        <li class="reaction" id="likeButton">
+                            <i class="bi bi-hand-thumbs-up"></i>
+                            <span>Like</span>
+                        </li>
+                        <li class="reaction" id="commentButton">
+                            <i class="bi bi-chat-dots"></i>
+                            <span>Comments</span>
+                        </li>
+                        <li class="reaction" id="shareButton">
+                            <i class="bi bi-share"></i>
+                            <span>Share</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <hr>
+
+                <div class="commentSection">
+                    <a href=""><img src="../assests/Username 7.jpg" alt="user profile" class="profileImage"></a>
+                    <input type="text" placeholder="Adauga un comentariu" class="newCommentField" id="commentInput">
+                    <button class="insertCommentButton" id="commentInputButton"><i class="bi bi-send"></i></button>
+                </div>
+
+                <div class="userComments">
+
+                    <div class="commentContent">
+                        <div class="profileUserComment">
+                            <a href=""><img src="../assests/Username 7.jpg" alt="user profile" class="profileImage"></a>
+                            <span>Username 7</span>
+                        </div>
+
+                        <div class="userCommentText">
+                            <span class="commentMessage">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit,
+                                a accusamus.
+                                Accusantium
+                                recusandae placeat cupiditate a possimus ipsam doloremque sit.</span>
+                            <div class="emojiReaction">🥳</div>
                         </div>
 
                         <div class="commentReaction">
@@ -239,11 +658,6 @@
                             <span class="onlineUser"><strong> Username 1</strong></span>
                         </a>
                     </li>
-                    <!-- <li><a href="#"><img src="../assests/Username 2.jpg" alt="user profile" class="profileImage"><i
-                                class="bi bi-dot bs-success"></i>
-                            <span class="onlineUser"><strong> Username 2</strong></span>
-                        </a>
-                    </li> -->
                     <li><a href="#"><img src="../assests/Username 3.jpg" alt="user profile" class="profileImage"><i
                                 class="bi bi-dot bs-success"></i>
                             <span class="onlineUser"><strong> Username 3</strong></span>
@@ -312,12 +726,12 @@
             </div>
             <hr>
         </aside>
-        <div class="chat-popup" id="myForm">
-            <form class="form-container">
+        <div class="chatPopup" id="myForm">
+            <form class="formContainer">
               <label for="msg" id="messageLabel"><strong>Message to: </strong></label>
               <textarea placeholder="Type message.." name="msg" class="message"></textarea>
-              <button type="submit" class="btn" onclick="sendMessage()">Send</button>
-              <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+              <button type="submit" class="btnSubmit" onclick="sendMessage()">Send</button>
+              <button type="button" class="btnCancel" onclick="closeForm()">Close</button>
             </form>
         </div>
     </main>
