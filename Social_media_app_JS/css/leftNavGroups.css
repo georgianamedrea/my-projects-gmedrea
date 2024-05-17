@@ -346,11 +346,6 @@ hr {
     gap: 0.5rem;
 }
 
-/* .commentSection .profileImage {
-    width: 3rem;
-    border-radius: 50%;
-} */
-
 .commentSection .newCommentField {
     width: 80%;
     border-radius: 0.5rem;
@@ -393,11 +388,6 @@ hr {
     margin-left: 1rem;
     gap: 0.5rem;
 }
-
-/*.userComments .profileUserComment .profileImage {
-    width: 3rem;
-    border-radius: 50%;
-} */
 
 .profileImage {
     width: 3rem;

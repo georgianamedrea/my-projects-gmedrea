@@ -179,6 +179,8 @@ ul {
 .mainContent .post .postHeader .profileUserInfo .profileName {
     display: flex;
     flex-direction: column;
+    position: relative;
+    left: 0.5rem;
 }
 
 .mainContent .post .postHeader .profileOptions {
@@ -275,11 +277,6 @@ hr {
     align-items: center;
     gap: 0.5rem;
 }
-
-/* .commentSection .profileImage {
-    width: 3rem;
-    border-radius: 50%;
-} */
 
 .commentSection .newCommentField {
     width: 80%;
