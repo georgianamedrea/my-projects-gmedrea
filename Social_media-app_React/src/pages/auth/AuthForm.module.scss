@@ -40,6 +40,10 @@
             flex-direction: column;
             align-items: center;
 
+            .error {
+                color: purple;
+            }
+
             button {
                 cursor: pointer;
                 color: white;
