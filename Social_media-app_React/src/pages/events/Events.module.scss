@@ -1,0 +1,360 @@
+.events {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15rem;
+
+    .titleSuggestedEvents {
+        position: relative;
+        left: -34rem;
+        top: 5rem;
+    }
+
+    .suggestedEvents {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: 80rem;
+        height: 44rem;
+        overflow: auto;
+        overflow-x: hidden;
+        gap: 1rem;
+        border: 2px solid whitesmoke;
+        position: relative;
+        top: -10rem;
+
+        .suggestedEvent {
+            padding: 0.2rem;
+
+            .suggestedEventText {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                gap: 0.1rem;
+
+                .suggestedEventName {
+                    position: absolute;
+                    top: -0.1rem;
+                }
+
+                .suggestedEventIntestedPeople {
+                    position: absolute;
+                    top: 1.4rem;
+                }
+
+            }
+
+            .actionButtons {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                top: 0.4rem;
+                gap: 1.5rem;
+
+
+                .button {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    width: 15rem;
+                    height: 2rem;
+                    background-color: lightgray;
+                    color: black;
+                    border-radius: 10%;
+                    border: 1px solid black;
+                }
+
+                .sendIcon {
+                    color: black;
+                    background-color: whitesmoke;
+                    border-radius: 10%;
+                    width: 2.5rem;
+                    height: 2rem;
+                    display: flex;
+                    align-self: center;
+                }
+            }
+        }
+    }
+
+    .titleMyEvents {
+        position: relative;
+        left: -37rem;
+        top: -20rem;
+    }
+
+    .myEvents {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        width: 80rem;
+        height: 44rem;
+        overflow: auto;
+        gap: 1rem;
+        border: 2px solid whitesmoke;
+        position: relative;
+        top: -35rem;
+
+        .myEvent {
+            padding: 0.2rem;
+
+            .myEventText {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                gap: 0.1rem;
+
+                .myEventName {
+                    position: absolute;
+                    top: -0.1rem;
+                }
+
+                .myEventIntestedPeople {
+                    position: absolute;
+                    top: 1.4rem;
+                }
+
+            }
+
+            .myActionButtons {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                top: 0.4rem;
+                gap: 1.5rem;
+
+
+                .myButton {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-wrap: wrap;
+                    width: 15rem;
+                    height: 2rem;
+                    background-color: rgb(59, 112, 247);
+                    color: white;
+                    border-radius: 10%;
+                    border: 1px solid blue;
+                }
+
+                .mySendIcon {
+                    color: black;
+                    background-color: whitesmoke;
+                    border-radius: 10%;
+                    width: 2.5rem;
+                    height: 2rem;
+                    display: flex;
+                    align-self: center;
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 1100px) {
+    .events {
+        flex-direction: row;
+        gap: 1rem;
+
+        .titleMyEvents {
+            top: -27rem;
+            left: 2rem;
+            width: 10rem;
+        }
+
+        .myEvents {
+            flex-direction: row;
+            width: 32rem;
+            height: 60rem;
+            justify-content: flex-start;
+            top: 5rem;
+            left: -6rem;
+
+            .myEvent {
+
+                .myActionButtons {
+                    .myButton {
+                        width: 10rem;
+                    }
+
+                    .mySendIcon {
+                        right: -2rem;
+                    }
+                }
+            }
+        }
+
+        .titleSuggestedEvents {
+            top: -27rem;
+            left: 7rem;
+            width: 20rem;
+            height: 2rem;
+        }
+
+        .suggestedEvents {
+            flex-direction: row;
+            width: 32rem;
+            height: 60rem;
+            justify-content: flex-start;
+            top: 5rem;
+            left: -8rem;
+
+            .suggestedEvent {
+
+                .actionButtons {
+                    .button {
+                        width: 10rem;
+                    }
+
+                    .sendIcon {
+                        right: -2rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .events {
+        flex-direction: column;
+
+        .titleMyEvents {
+            top: 5rem;
+            left: -7rem;
+        }
+
+        .myEvents {
+            width: 25rem;
+            left: 0.5rem;
+
+            .myEvent {
+
+                .myActionButtons {
+                    .myButton {
+                        width: 15rem;
+                    }
+
+                    .mySendIcon {
+                        right: 0;
+                    }
+                }
+            }
+        }
+
+        .titleSuggestedEvents {
+            top: 4rem;
+            left: -2rem;
+        }
+
+        .suggestedEvents {
+            width: 25rem;
+            left: 0.5rem;
+
+
+            .suggestedEvent {
+
+                .actionButtons {
+                    .button {
+                        width: 15rem;
+                    }
+
+                    .sendIcon {
+                        right: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .events {
+        position: relative;
+
+        .myEvents {
+            width: 70%;
+
+            .myEvent {
+
+                .myActionButtons {
+                    .myButton {
+                        width: 7rem;
+                    }
+
+                    .mySendIcon {
+                        right: 0;
+                    }
+                }
+            }
+        }
+
+
+            .suggestedEvents {
+                width: 70%;
+
+                .suggestedEvent {
+
+                    .actionButtons {
+                        .button {
+                            width: 7rem;
+                        }
+
+                        .sendIcon {
+                            right: 0;
+                        }
+                    }
+                }
+
+            }
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .events {
+
+        .suggestedEvents {
+
+            .suggestedEvent {
+
+                .actionButtons {
+                    .button {
+                        width: 6rem;
+                    }
+
+                    .sendIcon {
+                        right: -15rem;
+                    }
+                }
+            }
+        }
+
+        .myEvents {
+
+            .myEvent {
+
+                .myActionButtons {
+                    .myButton {
+                        width: 6rem;
+                    }
+
+                    .mySendIcon {
+                        right: -15rem;
+                    }
+                }
+            }
+        }
+
+    }
+}
