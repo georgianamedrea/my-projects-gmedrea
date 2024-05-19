@@ -243,3 +243,53 @@ h3 {
 .leftContent button {
     display: none;
 }
+
+@media only screen and (max-width: 1200px) {
+
+    .leftContent {
+        margin-top: 5rem;
+    }
+
+    .mainContent {
+        margin-top: 5rem;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+    .mainNavigation {
+        display: none;
+    }
+
+    .mainContent {
+        position: relative;
+        left: -6rem;
+    }
+
+    h3 {
+        position: relative;
+        left: 3rem;
+    }
+}
+
+@media only screen and (max-width: 570px) {
+
+    .leftContent {
+        display: none;
+    }
+
+    .mainContent {
+        left: -16rem;
+    }
+}
+
+@media only screen and (max-width: 410px) {
+
+    .mainContent {
+        left: -25rem;
+    }
+
+    .mainSearch .searchInput {
+        display: none;
+    }
+}

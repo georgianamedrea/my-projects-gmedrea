@@ -179,3 +179,48 @@ h3 {
     background-color: blue;
     color: white;
 }
+
+@media only screen and (max-width: 1350px) {
+
+    .mainContent {
+        position: relative;
+        top: 5rem;
+        left: -18rem;
+    }
+
+    .mainContent ul {
+        width: 90rem;
+    }
+
+    h3 {
+        position: relative;
+        top: 5rem;
+        left: -15rem;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+    .mainNavigation {
+        display: none;
+    }
+
+    .mainSearch .searchInput {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .mainContent {
+        left: -28rem;
+    }
+
+    .mainContent ul {
+        width: 50rem;
+    }
+
+    h3 {
+        left: -28rem;
+    }
+}

@@ -258,6 +258,7 @@ hr {
     color: royalblue;
     border-radius: 1rem;
 }
+
 .post .actions .reaction:hover {
     color: teal;
     background-color: lightblue;
@@ -444,5 +445,58 @@ hr {
 
     to {
         left: 0rem;
+    }
+}
+
+@media only screen and (max-width: 1350px) {
+
+
+    .mainContent {
+        position: relative;
+        top: 3rem;
+    }
+
+    h2 {
+        position: relative;
+        left: -15rem;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+    .mainContent {
+        width: 75%;
+        left: -19rem;
+    }
+
+    .mainNavigation {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+
+    .mainContent {
+        width: 80%;
+        left: -15rem;
+    }
+
+    h2 {
+        left: -20rem;
+    }
+
+    .mainSearch .searchInput {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+
+    .mainContent {
+        left: -10rem;
+    }
+
+    h2 {
+        left: -24rem;
     }
 }

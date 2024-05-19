@@ -281,7 +281,7 @@ ul {
     display: flex;
     flex-direction: column;
     position: relative;
-    left: -15px;
+    left: 2rem;
 }
 
 .content .imgWrapper .imgContent {
@@ -509,5 +509,65 @@ hr {
 
     to {
         left: 0rem;
+    }
+}
+
+@media only screen and (max-width: 1150px) {
+
+
+    .mainContent {
+        position: relative;
+        top: 3rem;
+    }
+
+    .leftContent {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+    .mainContent {
+        width: 75%;
+        left: -19rem;
+    }
+
+    .mainNavigation {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+
+    .mainContent {
+        width: 80%;
+        left: -15rem;
+    }
+
+    .mainContent .post .postHeader .profileUserInfo .profileName {
+        width: 8rem;
+    }
+
+    h2 {
+        left: -20rem;
+    }
+
+    .mainSearch .searchInput {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+
+    .mainContent {
+        left: -10rem;
+    }
+
+    .mainContent .post .postHeader .profileUserInfo .profileName {
+        width: 7.5rem;
+    }
+
+    h2 {
+        left: -24rem;
     }
 }

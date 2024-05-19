@@ -47,11 +47,13 @@ for (let i = 0; i < friendRequestElements.length; i++) {
     })
 }
 
-for (let i = 0; i < friendRequestElements.length; i++) {
+for (let i = 0; i < suggestedFriendElements.length; i++) {
 
     const suggestedFriendElement = suggestedFriendElements[i];
     const addFriendBtns = suggestedFriendElement.querySelectorAll('.addFriend');
     const removeRequestBtns = suggestedFriendElement.querySelectorAll('.removeRequest');
+
+    console.log(addFriendBtns)
 
     addFriendBtns.forEach(addFriendBtn => {
         addFriendBtn.addEventListener('click', function () {

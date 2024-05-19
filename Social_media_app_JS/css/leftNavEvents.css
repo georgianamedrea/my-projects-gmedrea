@@ -179,3 +179,58 @@ h3 {
     background-color: blue;
     color: white;
 }
+
+@media only screen and (max-width: 1550px) {
+
+    .mainContent {
+        position: relative;
+        top: 5rem;
+        left: -18rem;
+    }
+
+    .mainContent ul {
+        width: 120rem;
+    }
+
+    h3 {
+        position: relative;
+        top: 5rem;
+        left: -15rem;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .mainNavigation {
+        display: none;
+    }
+
+    .mainContent {
+        left: -18rem;
+    }
+
+    h3 {
+        left: -18rem;
+    }
+
+    .mainContent ul {
+        width: 60rem;
+        align-self: center;
+    }
+
+    .mainSearch .searchInput {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .mainContent {
+        left: -20rem;
+        width: 90%;
+    }
+
+    h3 {
+        left: -20rem;
+    }
+}

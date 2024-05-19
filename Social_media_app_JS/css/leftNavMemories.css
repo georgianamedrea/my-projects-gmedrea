@@ -141,17 +141,22 @@ body {
     left: 1rem;
 }
 
-h2 {
+.memories {
+    display: flex;
+    flex-direction: column;
+}
+
+.memories h2 {
     border: 2px solid whitesmoke;
     background-color: lightblue;
     padding: 2px;
     border-radius: 10px;
     width: 460px;
-    margin-left: 43rem;
     margin-top: 10rem;
+    align-self: center;
 }
 
-.container {
+.memories .container {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -159,26 +164,44 @@ h2 {
     border-radius: 10px;
     width: 40rem;
     height: 30rem;
-    gap: 10px;
-    margin-left: 32%;
+    margin-left: 28%;
     margin-top: 6%;
-    gap: 80px;
+    gap: 1%;
     background-color: aliceblue;
 }
 
-.container .imgContent {
+.memories .container .imgContent {
     border-radius: 50%;
+    position: relative;
 }
 
-.container .userProfile {
+.memories .container .userProfile {
     display: flex;
     flex-direction: column;
-    text-align: center;
+    position: relative;
+    left: 2rem;
 }
 
-.container .friendProfile {
+.memories .container .friendProfile {
     display: flex;
     flex-direction: column;
-    text-align: center;
+    right: 2rem;
 }
 
+.memories .container .friendProfile .userNameFriend {
+    position: relative;
+    right: -3rem;
+}
+
+@media only screen and (max-width: 1000px) {
+
+    .memories {
+        position: relative;
+        right: 6.5rem;
+    }
+
+    h2 {
+        position: relative;
+        left: 10rem;
+    }
+}

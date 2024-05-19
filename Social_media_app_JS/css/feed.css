@@ -266,7 +266,7 @@ hr {
     background-color: white;
     position: fixed;
     right: 0.5rem;
-    bottom: 1.5rem;
+    bottom: 0;
     z-index: 9999;
 }
 
@@ -612,5 +612,53 @@ hr {
 
     to {
         left: 0rem;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+
+    .rightContent {
+        display: none;
+    }
+
+    .mainContent {
+        width: 60%;
+        position: relative;
+        right: -10rem;
+    }
+
+    .leftContent {
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+    .mainContent {
+        right: -6rem;
+    }
+
+    .mainNavigation {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+
+    .mainContent {
+        display: none;
+    }
+
+    .leftContent {
+        width: 50%;
+        left: 8rem;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+
+    .leftContent {
+        width: 70%;
+        left: 2rem;
     }
 }
