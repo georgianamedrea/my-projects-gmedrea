@@ -490,7 +490,7 @@ hr {
     }
 }
 
-@media only screen and (max-width: 350px) {
+@media only screen and (max-width: 375px) {
 
     .mainContent {
         left: -10rem;

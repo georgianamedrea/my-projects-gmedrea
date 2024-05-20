@@ -649,6 +649,10 @@ hr {
         display: none;
     }
 
+    .mainSearch .searchInput {
+        display: none;
+    }
+
     .leftContent {
         width: 50%;
         left: 8rem;
